@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Bad Apple Media</title>
+
+    <!-- FullCalendar Styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.10/main.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fullcalendar/timegrid@6.1.10/main.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- FullCalendar Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.10/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/timegrid@6.1.10/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@6.1.10/index.global.min.js"></script>
+
+    <style>
+      body {
+        font-family: "Bangla MN", serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .nav-container {
+        text-align: center;
+        padding: 20px;
+        background-color: #222;
+        color: white;
+      }
+
+      .page-header {
+        font-family: "Emberly", serif;
+        font-size: 48px;
+        text-transform: uppercase;
+        margin: 0;
+        color: white;
+      }
+
+      .container {
+        position: relative;
+        overflow: hidden;
+        min-height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+      }
+
+      .background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+        opacity: 0.5;
+      }
+
+      .content-container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+      }
+
+      #calendar {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 800px;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+      }
+
+      .copyright {
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        margin: 20px auto;
+        position: relative;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="nav-container">
+      <h1 class="page-header">Contact</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+      <video class="background-video" autoplay muted loop>
+        <source src="./assets/images/PodcastVideo.mp4" type="video/mp4" />
+      </video>
+
+      <div class="content-container">
+        <!-- Calendar -->
+        <div id="calendar"></div>
+      </div>
+
+      <div class="copyright">
+        © 2024 BAD APPLE MEDIA. ALL RIGHTS RESERVED.
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
+
+        // Initialize calendar
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          plugins: ["timeGrid", "interaction"], // TimeGrid for slots, interaction for click handling
+          initialView: "timeGridWeek",
+          editable: false,
+          selectable: true,
+          slotDuration: "01:00:00", // Duration of each slot (1 hour in this case)
+          slotLabelFormat: { hour: "2-digit", minute: "2-digit", meridiem: "short" },
+          events: [], // Existing bookings go here
+          select: function (info) {
+            const confirmed = confirm(`Do you want to book this slot?\n${info.start.toLocaleString()}`);
+            if (confirmed) {
+              // Add event to calendar
+              calendar.addEvent({
+                title: "Booked", // Label for booked slots
+                start: info.start,
+                end: info.end,
+                backgroundColor: "#ff6f61", // Red to indicate booked
+                borderColor: "#ff6f61",
+              });
+
+              alert(`You have successfully booked the slot: ${info.start.toLocaleString()}`);
+            }
+          },
+        });
+
+        calendar.render();
+      });
+    </script>
+  </body>
+</html>
