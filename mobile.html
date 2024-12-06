@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talk Shop Podcasting Studio</title>
+  <!-- Google Fonts -->
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Emberly:wght@600&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bangla+MN:wght@400&display=swap"
+  />
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .mobile-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: transparent;
+      padding: 10px;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .mobile-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    
+    .mobile-logo {
+      width: 90px;
+      height: auto;
+    }
+    
+    .dropdown-toggle {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 10px;
+      position: absolute;
+      right: 10px;
+    }
+    
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 10px 0;
+      text-align: center;
+    }
+    
+    .dropdown-menu.show {
+      display: block;
+    }
+    
+    .dropdown-menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-family: 'Bangla MN', sans-serif;
+      text-align: center;
+    }
+
+    /* Added styles for larger book now button */
+    .book-now-button {
+      width: 160px !important;
+      height: 50px !important;
+      font-size: 16px !important;
+    }
+
+    /* Increased copyright font size */
+    .copyright {
+      font-size: 10.4px !important; /* Original 8px * 1.3 */
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+      <div class="mobile-header">
+        <img src="./assets/images/talkshopyellow.png" alt="Talk Shop Logo" class="mobile-logo">
+        <button class="dropdown-toggle" onclick="toggleMenu()">
+          &#9662;
+        </button>
+      </div>
+      <div class="dropdown-menu" id="mobileMenu">
+        <a href="about.html">ABOUT</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="services.html">SERVICES</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+    </nav>
+
+    <!-- Video Section -->
+    <div class="k-podcast-video">
+      <video autoplay muted loop class="img-podcast">
+        <source src="./assets/images/PodcastVideoPortrait.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <span class="your-space-to-speak" style="line-height: 0.96; font-size: 16.8vw;">YOUR<br />SPACE TO<br />SPEAK</span>
+      <a href="booking.html"><button class="book-now-button">BOOK NOW</button></a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      © 2024 BAD APPLE MEDIA. ALL RIGHTS RESERVED.
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

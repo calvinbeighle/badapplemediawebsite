@@ -409,3 +409,98 @@ body.about .copyright {
   color: #ffffff;
   opacity: 0.7;
 }
+/* Default font size for larger screens */
+h1 {
+  font-size: 3rem;
+}
+
+/* Adjust font size for mobile devices */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+/* Mobile-Specific Styles */
+/* Mobile-Specific Styles */
+@media (max-width: 768px) {
+  /* Navigation Container */
+  .nav-container {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .nav-logo {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .nav-link {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  /* Title Text ("YOUR SPACE TO SPEAK") */
+  .your-space-to-speak {
+    font-size: 14vw; /* Dynamically scales with viewport width */
+    max-font-size: 28px; /* Sets an upper limit for readability */
+    min-font-size: 18px; /* Sets a lower limit to prevent it from shrinking too much */
+    top: 40%; /* Adjusted positioning */
+    text-align: center;
+    line-height: 1.4; /* Improved spacing between lines */
+    padding: 0 10px; /* Prevents text from touching the edges */
+  }
+
+  /* "BOOK NOW" Button */
+  .book-now-button {
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+    top: 65%;
+  }
+
+  /* Copyright */
+  .copyright {
+    font-size: 8px;
+    padding: 10px;
+  }
+
+  /* Additional Mobile Adjustments */
+  .container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .contact-form {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 90%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .contact-form button {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
