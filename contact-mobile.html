@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talk Shop Podcasting Studio</title>
+  <!-- Google Fonts -->
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Emberly:wght@600&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bangla+MN:wght@400&display=swap"
+  />
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkjOTLqa5G3x_wvcNTUr2ssDBhICEVkUI&libraries=places"></script>
+  <style>
+    .mobile-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: transparent;
+      padding: 10px;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .mobile-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    
+    .mobile-logo {
+      width: 90px;
+      height: auto;
+    }
+    
+    .dropdown-toggle {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 10px;
+      position: absolute;
+      right: 10px;
+    }
+    
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 10px 0;
+      text-align: center;
+    }
+    
+    .dropdown-menu.show {
+      display: block;
+    }
+    
+    .dropdown-menu a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-family: 'Bangla MN', sans-serif;
+      text-align: center;
+    }
+
+    .content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+      padding-top: 80px;
+    }
+
+    .contact-form {
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      font-size: 16px;
+    }
+
+    .contact-form textarea {
+      height: 150px;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+    }
+
+    #map {
+      width: 85%;
+      height: 400px;
+      margin: 20px auto;
+    }
+
+    .directions-button {
+      display: block;
+      text-align: center;
+      background: transparent;
+      color: #fff;
+      padding: 15px;
+      text-decoration: none;
+      margin: 20px auto;
+      font-family: "Bangla MN", serif;
+      font-size: 16px;
+      border: 1px solid #ffffff;
+      width: 85%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section-header {
+      font-family: 'Bangla MN', serif;
+      font-size: 28px;
+      text-align: center;
+      margin: 30px 0;
+      font-weight: 300;
+      color: white;
+      width: 100%;
+    }
+
+    .map-section {
+      width: 100%;
+      margin-bottom: 40px;
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .message-section {
+      width: 100%;
+      margin-top: 20px;
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .copyright {
+      font-size: 10.4px !important;
+      text-align: center;
+      padding: 20px 0;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .container {
+      height: 100vh;
+      overflow-y: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: 1;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+      <div class="mobile-header">
+        <img src="./assets/images/talkshopyellow.png" alt="Talk Shop Logo" class="mobile-logo">
+        <button class="dropdown-toggle" onclick="toggleMenu()">
+          &#9662;
+        </button>
+      </div>
+      <div class="dropdown-menu" id="mobileMenu">
+        <a href="about.html">ABOUT</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="services.html">SERVICES</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+      <video class="background-video" autoplay muted loop>
+        <source src="./assets/images/PodcastVideoPortrait.mp4" type="video/mp4" />
+      </video>
+      
+      <div class="content-container">
+        <div class="map-section">
+          <h2 class="section-header">VISIT US</h2>
+          <div id="map"></div>
+          <a href="https://www.google.com/maps?q=2607+Brighton+Avenue,+Los+Angeles,+California" 
+             target="_blank" 
+             class="directions-button">
+            GET DIRECTIONS
+          </a>
+        </div>
+
+        <div class="message-section">
+          <h2 class="section-header">MESSAGE US</h2>
+          <form class="contact-form" action="mailto:calvinbeighle@gmail.com" method="post" enctype="text/plain" onsubmit="this.reset();">
+            <input type="text" placeholder="NAME" required>
+            <input type="email" placeholder="EMAIL" required>
+            <input type="tel" placeholder="PHONE NUMBER">
+            <textarea placeholder="YOUR MESSAGE" required></textarea>
+            <button type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+
+        <div class="copyright">© 2024 BAD APPLE MEDIA. ALL RIGHTS RESERVED.</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function initMap() {
+      const map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 34.0186, lng: -118.2953 },
+        zoom: 15,
+      });
+
+      const marker = new google.maps.Marker({
+        position: { lat: 34.0186, lng: -118.2953 },
+        map: map,
+        title: "2607 Brighton Avenue, Los Angeles, California",
+      });
+    }
+
+    window.onload = initMap;
+
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
