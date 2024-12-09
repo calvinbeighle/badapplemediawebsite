@@ -78,6 +78,24 @@
     }
 
     body { visibility: hidden; }
+
+    @font-face {
+      font-family: 'Emberly';
+      src: url('fonts/Emberly.woff2') format('woff2'),
+           url('fonts/Emberly-Regular.woff') format('woff'),
+           url('fonts/Emberly-Regular.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* Apply the font to your text */
+    .your-space-to-speak {
+      font-family: 'Emberly', serif;
+      font-size: 16.8vw; /* Adjust as needed */
+      line-height: 0.96;
+      /* Other styles... */
+    }
   </style>
 </head>
 <body>
@@ -104,7 +122,7 @@
         <source src="./assets/images/PodcastVideoPortrait.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <span class="your-space-to-speak" style="line-height: 0.96; font-size: 16.8vw;">YOUR<br />SPACE TO<br />SPEAK</span>
+      <span class="your-space-to-speak">YOUR<br />SPACE TO<br />SPEAK</span>
       <a href="booking.html"><button class="book-now-button">BOOK NOW</button></a>
     </div>
 
