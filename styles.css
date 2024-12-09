@@ -507,7 +507,7 @@ h1 {
 
 @font-face {
   font-family: 'Emberly';
-  src: url('https://fonts.googleapis.com/css2?family=Emberly:wght@600&display=swap') format('woff2');
+  src: url('fonts/Emberly.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -515,7 +515,7 @@ h1 {
 
 @font-face {
   font-family: 'Bangla MN';
-  src: url('https://fonts.googleapis.com/css2?family=Bangla+MN:wght@400&display=swap') format('woff2');
+  src: url('fonts/BanglaMN.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
