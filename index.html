@@ -18,7 +18,10 @@
   <script>
     // Check if user is on mobile
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      window.location.href = 'mobile.html';
+      // Don't redirect immediately - let fonts load first
+      window.addEventListener('load', function() {
+        window.location.href = 'mobile.html';
+      });
     }
   </script>
 </head>
