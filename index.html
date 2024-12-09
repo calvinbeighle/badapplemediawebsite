@@ -39,7 +39,7 @@
       </div>
       <div class="nav-right">
         <a href="services.html" class="nav-link">SERVICES</a>
-        <a href="contact.html" class="nav-link">CONTACT</a>
+        <a href="#" onclick="handleContactClick()" class="nav-link">CONTACT</a>
       </div>
     </div>
 
@@ -58,5 +58,15 @@
       © 2024 BAD APPLE MEDIA. ALL RIGHTS RESERVED.
     </div>
   </div>
+
+  <script>
+    function handleContactClick() {
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        window.location.href = 'contact-mobile.html';
+      } else {
+        window.location.href = 'contact.html';
+      }
+    }
+  </script>
 </body>
 </html>
