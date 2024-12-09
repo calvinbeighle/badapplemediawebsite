@@ -89,11 +89,29 @@
       font-display: swap;
     }
 
+    @font-face {
+      font-family: 'Bangla MN';
+      src: url('fonts/BanglaMN.woff2') format('woff2'),
+           url('fonts/BanglaMN.woff') format('woff'),
+           url('fonts/BanglaMN.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
     /* Apply the font to your text */
     .your-space-to-speak {
       font-family: 'Emberly', serif;
       font-size: 16.8vw; /* Adjust as needed */
       line-height: 0.96;
+      /* Other styles... */
+    }
+
+    .nav-link,
+    .copyright,
+    .book-now-button,
+    .dropdown-menu a {
+      font-family: 'Bangla MN', sans-serif;
       /* Other styles... */
     }
   </style>
