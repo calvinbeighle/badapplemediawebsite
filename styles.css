@@ -504,3 +504,13 @@ h1 {
     padding: 8px;
   }
 }
+
+@font-face {
+  font-family: 'Emberly';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bangla MN';
+  font-display: swap;
+}
