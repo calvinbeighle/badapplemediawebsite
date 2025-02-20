@@ -4,17 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Talk Shop Podcasting Studio</title>
-  <!-- Google Fonts -->
-  
-  />
-  <!-- Link to external stylesheet -->
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Preload fonts -->
   <link rel="preload" href="fonts/Emberly.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/BanglaMN.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Inline style to hide content until Bangla MN is loaded -->
+  <style>
+    body.font-loading {
+      visibility: hidden;
+    }
+  </style>
+  
   <script>
-    // Wait for both document and fonts to be ready
+    // Wait for Bangla MN to load and the document to be ready
     Promise.all([
-      document.fonts.ready,
+      document.fonts.load('1em "Bangla MN"'),
       new Promise(resolve => {
         if (document.readyState === 'complete') {
           resolve();
@@ -23,13 +30,15 @@
         }
       })
     ]).then(() => {
+      document.body.classList.remove('font-loading');
+      // Redirect mobile users after fonts and document are ready
       if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
         window.location.href = 'mobile.html';
       }
     });
   </script>
 </head>
-<body>
+<body class="font-loading">
   <div class="main-container">
     <!-- Navigation Links and Image -->
     <div class="nav-container">
