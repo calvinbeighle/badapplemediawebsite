@@ -1,0 +1,5 @@
+# Ignore Originals folder in assets/images
+assets/images/Originals/ 
+
+# Ignore backups folder in root directory
+backups/ 
