@@ -25,28 +25,28 @@
 
     <!-- Main Content Containers with Background Videos -->
     <div class="container">
-      <video class="background-video" autoplay muted loop poster="./assets/images/PodcastVideo1.png">
+      <video class="background-video" muted loop playsinline poster="./assets/images/PodcastVideo1.png">
         <source src="./assets/images/PodcastVideo1.mp4" type="video/mp4" />
       </video>
-      <video id="videoBackground" autoplay muted loop poster="./assets/images/PodcastVideo1.png">
+      <video id="videoBackground" muted loop playsinline poster="./assets/images/PodcastVideo1.png">
         <source src="./assets/images/PodcastVideo1.mp4" type="video/mp4" />
       </video>
     </div>
     
     <div class="container">
-      <video class="background-video" autoplay muted loop poster="./assets/images/PodcastVideo2.png">
+      <video class="background-video" muted loop playsinline poster="./assets/images/PodcastVideo2.png">
         <source src="./assets/images/PodcastVideo2.mp4" type="video/mp4" />
       </video>
-      <video id="videoBackground" autoplay muted loop poster="./assets/images/PodcastVideo2.png">
+      <video id="videoBackground" muted loop playsinline poster="./assets/images/PodcastVideo2.png">
         <source src="./assets/images/PodcastVideo2.mp4" type="video/mp4" />
       </video>
     </div>
 
     <div class="container">
-      <video class="background-video" autoplay muted loop poster="./assets/images/PodcastVideo3.png">
+      <video class="background-video" muted loop playsinline poster="./assets/images/PodcastVideo3.png">
         <source src="./assets/images/PodcastVideo3.mp4" type="video/mp4" />
       </video>
-      <video id="videoBackground" autoplay muted loop poster="./assets/images/PodcastVideo3.png">
+      <video id="videoBackground" muted loop playsinline poster="./assets/images/PodcastVideo3.png">
         <source src="./assets/images/PodcastVideo3.mp4" type="video/mp4" />
       </video>
       <div class="copyright">© 2024 BAD APPLE MEDIA. ALL RIGHTS RESERVED.</div>
@@ -69,6 +69,43 @@
           navLeft.style.opacity = '0';
           navRight.style.opacity = '0';
         }
+      });
+
+      // Video loading and synchronization
+      document.addEventListener('DOMContentLoaded', function() {
+        const videos = document.querySelectorAll('video');
+        let loadedVideos = 0;
+        const totalVideos = videos.length;
+
+        function checkAllVideosLoaded() {
+          loadedVideos++;
+          if (loadedVideos === totalVideos) {
+            // All videos are loaded, start playing them
+            videos.forEach(video => {
+              video.play().catch(error => {
+                console.log("Video play failed:", error);
+              });
+            });
+          }
+        }
+
+        // Add event listeners to all videos
+        videos.forEach(video => {
+          // Preload the video
+          video.preload = "auto";
+          
+          // Listen for when each video is ready to play
+          video.addEventListener('canplaythrough', function handler() {
+            checkAllVideosLoaded();
+            // Remove the event listener after it fires once
+            video.removeEventListener('canplaythrough', handler);
+          });
+
+          // Fallback if video is already cached and loaded
+          if (video.readyState >= 4) {
+            checkAllVideosLoaded();
+          }
+        });
       });
     </script>
   </body>

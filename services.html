@@ -25,10 +25,10 @@
 
     <!-- Main Content Containers with Background Videos -->
     <div class="container">
-      <video class="background-video" autoplay muted loop poster="./assets/images/Editing.png">
+      <video class="background-video" muted loop playsinline poster="./assets/images/Editing.png">
         <source src="./assets/images/Editing.mp4" type="video/mp4" />
       </video>
-      <video id="videoBackground" autoplay muted loop poster="./assets/images/Editing.png">
+      <video id="videoBackground" muted loop playsinline poster="./assets/images/Editing.png">
         <source src="./assets/images/Editing.mp4" type="video/mp4" />
       </video>
       <div style="position: absolute; bottom: 60px; left: 125px; color: white; font-family: 'Bangla MN', sans-serif; font-size: 24px; z-index: 3;">
@@ -37,10 +37,10 @@
     </div>
     
     <div class="container">
-        <video class="background-video" autoplay muted loop style="z-index: 1;" poster="./assets/images/Shooting.png">
+        <video class="background-video" muted loop playsinline style="z-index: 1;" poster="./assets/images/Shooting.png">
         <source src="./assets/images/Shooting.mp4" type="video/mp4" />
       </video>
-        <video id="videoBackground" autoplay muted loop style="z-index: 4;" poster="./assets/images/Shooting.png">
+        <video id="videoBackground" muted loop playsinline style="z-index: 4;" poster="./assets/images/Shooting.png">
         <source src="./assets/images/Shooting.mp4" type="video/mp4" />
       </video>
       <div style="position: absolute; bottom: 60px; left: 125px; color: white; font-family: 'Bangla MN', sans-serif; font-size: 24px; z-index: 5;">
@@ -49,16 +49,15 @@
     </div>
 
     <div class="container">
-      <video class="background-video" autoplay muted loop poster="./assets/images/Styling.png">
+      <video class="background-video" muted loop playsinline poster="./assets/images/Styling.png">
         <source src="./assets/images/Styling.mp4" type="video/mp4" />
       </video>
-      <video id="videoBackground" autoplay muted loop poster="./assets/images/Styling.png">
+      <video id="videoBackground" muted loop playsinline poster="./assets/images/Styling.png">
         <source src="./assets/images/Styling.mp4" type="video/mp4" />
       </video>
       <div style="position: absolute; bottom: 60px; left: 125px; color: white; font-family: 'Bangla MN', sans-serif; font-size: 24px; z-index: 3;">
         STYLING
       </div>
-      </video>
       <div class="copyright">© 2024 BAD APPLE MEDIA. ALL RIGHTS RESERVED.</div>
     </div>
 
@@ -79,6 +78,43 @@
           navLeft.style.opacity = '0';
           navRight.style.opacity = '0';
         }
+      });
+
+      // Video loading and synchronization
+      document.addEventListener('DOMContentLoaded', function() {
+        const videos = document.querySelectorAll('video');
+        let loadedVideos = 0;
+        const totalVideos = videos.length;
+
+        function checkAllVideosLoaded() {
+          loadedVideos++;
+          if (loadedVideos === totalVideos) {
+            // All videos are loaded, start playing them
+            videos.forEach(video => {
+              video.play().catch(error => {
+                console.log("Video play failed:", error);
+              });
+            });
+          }
+        }
+
+        // Add event listeners to all videos
+        videos.forEach(video => {
+          // Preload the video
+          video.preload = "auto";
+          
+          // Listen for when each video is ready to play
+          video.addEventListener('canplaythrough', function handler() {
+            checkAllVideosLoaded();
+            // Remove the event listener after it fires once
+            video.removeEventListener('canplaythrough', handler);
+          });
+
+          // Fallback if video is already cached and loaded
+          if (video.readyState >= 4) {
+            checkAllVideosLoaded();
+          }
+        });
       });
     </script>
   </body>
