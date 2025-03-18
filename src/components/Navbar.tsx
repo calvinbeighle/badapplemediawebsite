@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link
           to="/"
-          className="text-xl md:text-2xl font-bold tracking-tighter transition-opacity hover:opacity-80 text-yellow-400"
+          className="text-xl md:text-2xl font-bold tracking-tighter transition-opacity hover:opacity-80 text-white"
         >
           BAD APPLE MEDIA
         </Link>
@@ -57,7 +57,7 @@ const Navbar = () => {
                 link.path === location.pathname
                   ? "text-white opacity-100 font-semibold"
                   : link.path === "/booking" 
-                    ? "text-yellow-400 opacity-90" 
+                    ? "text-white opacity-90" 
                     : "text-white opacity-90"
               )}
             >
@@ -93,7 +93,7 @@ const Navbar = () => {
                 link.path === location.pathname
                   ? "text-white"
                   : link.path === "/booking" 
-                    ? "text-yellow-400" 
+                    ? "text-white" 
                     : "text-white/80"
               )}
             >
