@@ -9,7 +9,7 @@ interface LogoProps {
 
 const Logo = ({ className, size = 75, showText = true }: LogoProps) => {
   return (
-    <Link to="/" className={`flex items-center gap-0.25 transition-opacity hover:opacity-80 ${className}`}>
+    <Link to="/" className={`flex items-center gap-0 transition-opacity hover:opacity-80 ${className}`}>
       <div className="flex items-center -mt-1">
         <img 
           src="/lovable-uploads/281a642b-77e8-40ea-acfb-1cacb20d94da.png" 
@@ -20,7 +20,7 @@ const Logo = ({ className, size = 75, showText = true }: LogoProps) => {
         />
       </div>
       {showText && (
-        <span className="text-xl md:text-2xl font-bold tracking-tighter text-white">
+        <span className="text-xl md:text-2xl font-bold tracking-tighter text-white -ml-1">
           BAD APPLE MEDIA
         </span>
       )}
