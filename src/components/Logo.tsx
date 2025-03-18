@@ -7,7 +7,7 @@ interface LogoProps {
   showText?: boolean;
 }
 
-const Logo = ({ className, size = 40, showText = true }: LogoProps) => {
+const Logo = ({ className, size = 64, showText = true }: LogoProps) => {
   return (
     <Link to="/" className={`flex items-center gap-2 transition-opacity hover:opacity-80 ${className}`}>
       <img 
