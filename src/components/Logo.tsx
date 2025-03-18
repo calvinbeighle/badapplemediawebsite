@@ -7,9 +7,9 @@ interface LogoProps {
   showText?: boolean;
 }
 
-const Logo = ({ className, size = 64, showText = true }: LogoProps) => {
+const Logo = ({ className, size = 85, showText = true }: LogoProps) => {
   return (
-    <Link to="/" className={`flex items-center gap-1 transition-opacity hover:opacity-80 ${className}`}>
+    <Link to="/" className={`flex items-center gap-0.5 transition-opacity hover:opacity-80 ${className}`}>
       <img 
         src="/lovable-uploads/fd7998ba-9e01-4cd3-a65c-c9b4f32dc072.png" 
         alt="Bad Apple Media Logo" 
