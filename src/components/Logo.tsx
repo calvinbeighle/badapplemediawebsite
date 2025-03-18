@@ -20,7 +20,7 @@ const Logo = ({ className, size = 75, showText = true }: LogoProps) => {
         />
       </div>
       {showText && (
-        <span className="text-xl md:text-2xl font-bold tracking-tighter text-white -ml-1">
+        <span className="text-xl md:text-2xl font-bold tracking-tighter text-white -ml-3">
           BAD APPLE MEDIA
         </span>
       )}
