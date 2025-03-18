@@ -7,7 +7,7 @@ interface LogoProps {
   showText?: boolean;
 }
 
-const Logo = ({ className, size = 85, showText = true }: LogoProps) => {
+const Logo = ({ className, size = 75, showText = true }: LogoProps) => {
   return (
     <Link to="/" className={`flex items-center gap-0.5 transition-opacity hover:opacity-80 ${className}`}>
       <img 
@@ -15,7 +15,7 @@ const Logo = ({ className, size = 85, showText = true }: LogoProps) => {
         alt="Bad Apple Media Logo" 
         width={size} 
         height={size} 
-        className="object-contain -mt-1" 
+        className="object-contain -mt-2" 
       />
       {showText && (
         <span className="text-xl md:text-2xl font-bold tracking-tighter text-white">
