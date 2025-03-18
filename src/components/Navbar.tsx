@@ -57,7 +57,7 @@ const Navbar = () => {
                 link.path === location.pathname
                   ? "text-white opacity-100 font-semibold"
                   : link.path === "/booking" 
-                    ? "text-[#FCE4EC] opacity-95" 
+                    ? "text-white opacity-90" 
                     : "text-white opacity-90"
               )}
             >
@@ -91,9 +91,9 @@ const Navbar = () => {
               className={cn(
                 "text-lg font-medium transition-all duration-250",
                 link.path === location.pathname
-                  ? "text-[#FCE4EC]"
+                  ? "text-white"
                   : link.path === "/booking" 
-                    ? "text-[#FCE4EC]/90" 
+                    ? "text-white" 
                     : "text-white/80"
               )}
             >
