@@ -28,7 +28,7 @@ const ServiceCard = ({
   return (
     <div
       className={cn(
-        "bg-white rounded-lg overflow-hidden shadow-sm border border-studio-100 transition-all duration-350 hover:shadow-md",
+        "bg-white rounded-lg overflow-hidden shadow-sm border border-studio-100 transition-all duration-350 hover:shadow-md hover:border-purple-100",
         className
       )}
     >
@@ -43,7 +43,7 @@ const ServiceCard = ({
       )}
       <div className="p-6">
         <div className="flex items-center mb-2">
-          {icon && <span className="mr-2">{icon}</span>}
+          {icon && <span className="mr-2 text-purple-300">{icon}</span>}
           <h3 className="text-xl font-medium">{title}</h3>
         </div>
         <div className="mb-3">
@@ -54,7 +54,7 @@ const ServiceCard = ({
           <ul className="space-y-2 mb-6">
             {features.map((feature, index) => (
               <li key={index} className="flex items-start text-sm">
-                <span className="text-studio-900 mr-2">•</span>
+                <span className="text-purple-300 mr-2">•</span>
                 <span>{feature}</span>
               </li>
             ))}

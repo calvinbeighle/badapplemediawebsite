@@ -25,13 +25,13 @@ const PricingCard = ({
       className={cn(
         "bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-350 hover:shadow-md border relative",
         popular
-          ? "border-studio-900 scale-105 z-10 shadow-md"
+          ? "border-purple-200 scale-105 z-10 shadow-md"
           : "border-studio-100",
         className
       )}
     >
       {popular && (
-        <div className="absolute top-0 right-0 bg-studio-900 text-white text-xs font-medium py-1 px-3 rounded-bl-md">
+        <div className="absolute top-0 right-0 bg-purple-100 text-purple-900 text-xs font-medium py-1 px-3 rounded-bl-md">
           Most Popular
         </div>
       )}
@@ -47,7 +47,7 @@ const PricingCard = ({
             <div key={index} className="flex items-start">
               <Check
                 size={16}
-                className="mr-2 mt-1 text-studio-800 flex-shrink-0"
+                className="mr-2 mt-1 text-purple-400 flex-shrink-0"
               />
               <span className="text-sm text-studio-700">{feature}</span>
             </div>

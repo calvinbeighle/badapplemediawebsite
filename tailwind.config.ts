@@ -42,6 +42,19 @@ export default {
 					900: '#171717',
 					950: '#0a0a0a',
 				},
+				purple: {
+					50: '#f9f4ff',
+					100: '#d5a6ff',  // Our pale purple
+					200: '#c78afc',
+					300: '#b36ef9',
+					400: '#a052f6',
+					500: '#8b36f3',
+					600: '#7d1ae0',
+					700: '#6817b3',
+					800: '#551592',
+					900: '#461376',
+					950: '#290a48',
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'

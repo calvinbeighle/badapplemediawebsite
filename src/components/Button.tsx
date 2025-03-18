@@ -28,11 +28,11 @@ const Button = ({
       "text-base px-7 py-3 rounded-md": size === "lg",
 
       // Color Variants
-      "bg-white text-black hover:bg-gray-100": variant === "primary",
+      "bg-white text-black hover:bg-gray-100 focus:ring-purple-100": variant === "primary",
       "bg-studio-100 text-white hover:bg-studio-200": variant === "secondary",
-      "bg-transparent border border-white text-white hover:bg-white/10":
+      "bg-transparent border border-white text-white hover:bg-white/10 focus:ring-purple-100":
         variant === "outline",
-      "bg-transparent text-white hover:bg-white/10": variant === "ghost",
+      "bg-transparent text-white hover:bg-purple-100/10": variant === "ghost",
     },
     className
   );

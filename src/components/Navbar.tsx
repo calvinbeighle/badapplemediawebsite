@@ -43,7 +43,7 @@ const Navbar = () => {
           to="/"
           className="text-xl md:text-2xl font-bold tracking-tighter transition-opacity hover:opacity-80 text-white"
         >
-          BAD APPLE MEDIA
+          <span>BAD APPLE MEDIA</span>
         </Link>
 
         {/* Desktop Menu */}
@@ -55,7 +55,7 @@ const Navbar = () => {
               className={cn(
                 "text-sm font-medium transition-all duration-250 hover:opacity-70",
                 link.path === location.pathname
-                  ? "text-white opacity-100 font-semibold"
+                  ? "text-white opacity-100 font-semibold after:content-[''] after:block after:h-0.5 after:w-1/2 after:mx-auto after:mt-1 after:bg-purple-200"
                   : link.path === "/booking" 
                     ? "text-white opacity-90" 
                     : "text-white opacity-90"
@@ -91,7 +91,7 @@ const Navbar = () => {
               className={cn(
                 "text-lg font-medium transition-all duration-250",
                 link.path === location.pathname
-                  ? "text-white"
+                  ? "text-white after:content-[''] after:block after:h-0.5 after:w-6 after:mx-auto after:mt-1 after:bg-purple-200"
                   : link.path === "/booking" 
                     ? "text-white" 
                     : "text-white/80"
