@@ -41,9 +41,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link
           to="/"
-          className="text-xl md:text-2xl font-bold tracking-tighter transition-opacity hover:opacity-80"
+          className="text-xl md:text-2xl font-bold tracking-tighter transition-opacity hover:opacity-80 text-red-600"
         >
-          PODSTUDIO
+          BAD APPLE MEDIA
         </Link>
 
         {/* Desktop Menu */}
@@ -56,7 +56,9 @@ const Navbar = () => {
                 "text-sm font-medium transition-all duration-250 hover:opacity-70",
                 link.path === location.pathname
                   ? "text-black opacity-100"
-                  : "text-studio-600 opacity-90"
+                  : link.path === "/booking" 
+                    ? "text-red-600 opacity-90" 
+                    : "text-studio-600 opacity-90"
               )}
             >
               {link.name}
@@ -90,7 +92,9 @@ const Navbar = () => {
                 "text-lg font-medium transition-all duration-250",
                 link.path === location.pathname
                   ? "text-black"
-                  : "text-studio-600"
+                  : link.path === "/booking" 
+                    ? "text-red-600" 
+                    : "text-studio-600"
               )}
             >
               {link.name}

@@ -42,7 +42,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.6 }}
           >
-            <Button to="/booking" size="lg">
+            <Button to="/booking" size="lg" className="bg-red-600 hover:bg-red-700">
               Book Studio Time
             </Button>
             <Button to="/studio" variant="outline" size="lg" className="text-white border-white hover:bg-white/10">
@@ -68,8 +68,8 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-studio-50 p-8 rounded-lg transition-transform hover:translate-y-[-5px]">
-              <div className="mb-4 bg-studio-100 p-3 rounded-full w-fit">
-                <Mic size={24} className="text-studio-900" />
+              <div className="mb-4 bg-red-100 p-3 rounded-full w-fit">
+                <Mic size={24} className="text-red-600" />
               </div>
               <h3 className="text-xl font-medium mb-2">Professional Equipment</h3>
               <p className="text-studio-600">
@@ -78,8 +78,8 @@ const Index = () => {
             </div>
             
             <div className="bg-studio-50 p-8 rounded-lg transition-transform hover:translate-y-[-5px]">
-              <div className="mb-4 bg-studio-100 p-3 rounded-full w-fit">
-                <Users size={24} className="text-studio-900" />
+              <div className="mb-4 bg-red-100 p-3 rounded-full w-fit">
+                <Users size={24} className="text-red-600" />
               </div>
               <h3 className="text-xl font-medium mb-2">Comfortable Space</h3>
               <p className="text-studio-600">
@@ -88,8 +88,8 @@ const Index = () => {
             </div>
             
             <div className="bg-studio-50 p-8 rounded-lg transition-transform hover:translate-y-[-5px]">
-              <div className="mb-4 bg-studio-100 p-3 rounded-full w-fit">
-                <Clock size={24} className="text-studio-900" />
+              <div className="mb-4 bg-red-100 p-3 rounded-full w-fit">
+                <Clock size={24} className="text-red-600" />
               </div>
               <h3 className="text-xl font-medium mb-2">Flexible Booking</h3>
               <p className="text-studio-600">
@@ -101,7 +101,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 bg-studio-900 text-white">
+      <section className="relative py-20 bg-red-600 text-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Record Your Next Episode?</h2>
           <p className="text-white/80 max-w-2xl mx-auto mb-10">
@@ -111,7 +111,7 @@ const Index = () => {
             to="/booking" 
             variant="outline" 
             size="lg"
-            className="border-white text-white hover:bg-white hover:text-studio-900"
+            className="border-white text-white hover:bg-white hover:text-red-600"
           >
             Book Your Session
           </Button>
