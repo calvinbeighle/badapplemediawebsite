@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Logo from "./Logo";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -39,12 +40,7 @@ const Navbar = () => {
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Link
-          to="/"
-          className="text-xl md:text-2xl font-bold tracking-tighter transition-opacity hover:opacity-80 text-white"
-        >
-          <span>BAD APPLE MEDIA</span>
-        </Link>
+        <Logo />
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center space-x-8">
