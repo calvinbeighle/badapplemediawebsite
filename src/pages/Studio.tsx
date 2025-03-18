@@ -1,19 +1,30 @@
 
 import { motion } from "framer-motion";
+import { Mic, Camera, Monitor, PlaySquare } from "lucide-react";
 import StudioCard from "@/components/StudioCard";
+import ServiceCard from "@/components/ServiceCard";
 import Button from "@/components/Button";
+import { 
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious
+} from "@/components/ui/carousel";
 
 const Studio = () => {
   const equipmentList = [
     {
       title: "Microphones",
       description: "4× Shure SM7B, perfect for voice recording with excellent noise rejection.",
-      imageSrc: "https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200"
+      imageSrc: "https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200",
+      icon: <Mic className="mb-2 h-6 w-6" />
     },
     {
       title: "Audio Interface",
       description: "RME Fireface UCX II, 40-channel USB audio interface with exceptional sound quality.",
-      imageSrc: "https://images.unsplash.com/photo-1558392204-ac78741f4abf?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200"
+      imageSrc: "https://images.unsplash.com/photo-1558392204-ac78741f4abf?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200",
+      icon: <Monitor className="mb-2 h-6 w-6" />
     },
     {
       title: "Headphones",
@@ -37,17 +48,41 @@ const Studio = () => {
     }
   ];
 
+  const studioSpaces = [
+    {
+      title: "Podcast Studio",
+      description: "Intimate setting with professional equipment for up to 4 guests.",
+      imageSrc: "public/lovable-uploads/5be7c992-e59c-4300-b660-15ef39b6631e.png",
+      price: "From $75/hour",
+      buttonText: "Book Now"
+    },
+    {
+      title: "Cyc Wall Studio",
+      description: "Perfect for e-commerce, corporate videos, ads, and photography.",
+      imageSrc: "public/lovable-uploads/0f7668ed-d3fe-4545-9fc4-4ec53a6a6c05.png",
+      price: "From $90/hour",
+      buttonText: "Book Now"
+    },
+    {
+      title: "RGB Lighting Setup",
+      description: "Customizable lighting for creative projects and visual content.",
+      imageSrc: "public/lovable-uploads/f7aacc24-737b-458d-be95-cf9fbbb00c07.png",
+      price: "From $85/hour",
+      buttonText: "Book Now"
+    }
+  ];
+
   return (
     <div className="pt-20">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=2000"
+            src="public/lovable-uploads/5be7c992-e59c-4300-b660-15ef39b6631e.png"
             alt="Recording Studio"
             className="object-cover w-full h-full"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40"></div>
         </div>
         
         <div className="relative z-10 max-w-4xl mx-auto text-center px-6">
@@ -57,7 +92,7 @@ const Studio = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            Our Studio Space
+            Our Studio Spaces
           </motion.h1>
           
           <motion.p 
@@ -66,16 +101,66 @@ const Studio = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            Designed with both acoustics and comfort in mind, our studio provides the perfect environment for creating exceptional podcast content.
+            Professional environments designed for creating exceptional content, from podcasts to visual media.
           </motion.p>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+          >
+            <Button 
+              to="/booking" 
+              variant="primary" 
+              size="lg"
+              className="bg-white text-studio-900 hover:bg-studio-50"
+            >
+              Book Studio Time
+            </Button>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Studio Carousel */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Our Studio Spaces</h2>
+            <p className="text-studio-600 max-w-2xl mx-auto">
+              Explore our professionally designed studio environments for all your content creation needs.
+            </p>
+          </div>
+          
+          <Carousel className="max-w-5xl mx-auto">
+            <CarouselContent>
+              {studioSpaces.map((space, index) => (
+                <CarouselItem key={index}>
+                  <div className="p-2">
+                    <ServiceCard
+                      title={space.title}
+                      price={space.price}
+                      description={space.description}
+                      imageSrc={space.imageSrc}
+                      buttonText={space.buttonText}
+                      buttonVariant="primary"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="flex justify-center mt-8">
+              <CarouselPrevious className="relative static mx-2 translate-y-0 left-0" />
+              <CarouselNext className="relative static mx-2 translate-y-0 right-0" />
+            </div>
+          </Carousel>
         </div>
       </section>
 
       {/* Studio Overview */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-studio-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="order-2 md:order-1">
               <h2 className="text-3xl font-bold mb-6">State-of-the-Art Recording Space</h2>
               <p className="text-studio-600 mb-6">
                 Our professionally designed studio features acoustic treatment for pristine sound quality and comfortable seating for up to four people. The space includes a dedicated control room and recording booth, ensuring separation between hosts and guests when needed.
@@ -86,10 +171,62 @@ const Studio = () => {
               <Button to="/booking">Book Studio Time</Button>
             </div>
             
+            <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
+              <img
+                src="public/lovable-uploads/5be7c992-e59c-4300-b660-15ef39b6631e.png"
+                alt="Studio Interior"
+                className="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Cyc Wall Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1605493725784-63b4631fce65?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200"
-                alt="Studio Interior"
+                src="public/lovable-uploads/0f7668ed-d3fe-4545-9fc4-4ec53a6a6c05.png"
+                alt="Cyc Wall Studio"
+                className="object-cover w-full h-full"
+              />
+            </div>
+            
+            <div>
+              <h2 className="text-3xl font-bold mb-6">Professional Cyc Wall</h2>
+              <p className="text-studio-600 mb-6">
+                Our cyc wall provides a seamless background for photography, videography, and product shoots. Perfect for e-commerce, corporate videos, advertisements, and creative projects.
+              </p>
+              <p className="text-studio-600 mb-8">
+                With professional lighting equipment and ample space, you can create stunning visuals with endless possibilities for customization.
+              </p>
+              <Button to="/booking">Book Cyc Wall Studio</Button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* RGB Lighting Setup */}
+      <section className="py-16 bg-studio-50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1">
+              <h2 className="text-3xl font-bold mb-6">RGB Lighting Environment</h2>
+              <p className="text-studio-600 mb-6">
+                Create visually stunning content with our customizable RGB lighting setup. Perfect for interviews, creative portraits, and promotional content that demands a unique visual aesthetic.
+              </p>
+              <p className="text-studio-600 mb-8">
+                Our lighting technicians can help you achieve the perfect look for your project, whether you need subtle accents or bold, dramatic effects.
+              </p>
+              <Button to="/booking">Book RGB Studio</Button>
+            </div>
+            
+            <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
+              <img
+                src="public/lovable-uploads/f7aacc24-737b-458d-be95-cf9fbbb00c07.png"
+                alt="RGB Lighting Setup"
                 className="object-cover w-full h-full"
               />
             </div>
@@ -98,12 +235,12 @@ const Studio = () => {
       </section>
 
       {/* Equipment Section */}
-      <section className="py-16 bg-studio-50">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Professional Equipment</h2>
             <p className="text-studio-600 max-w-2xl mx-auto">
-              Our studio is equipped with top-of-the-line gear to ensure your podcast sounds professional from day one.
+              Our studio is equipped with top-of-the-line gear to ensure your content sounds and looks professional from day one.
             </p>
           </div>
           
@@ -127,50 +264,12 @@ const Studio = () => {
         </div>
       </section>
 
-      {/* Additional Services */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Additional Services</h2>
-            <p className="text-studio-600 max-w-2xl mx-auto">
-              Beyond our recording space, we offer a range of services to help you create and grow your podcast.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="border border-studio-100 rounded-lg p-8 transition-all hover:shadow-md">
-              <h3 className="text-xl font-medium mb-3">Post-Production</h3>
-              <p className="text-studio-600 mb-4">
-                Professional editing, mixing, and mastering services to polish your recordings.
-              </p>
-              <Button variant="ghost" size="sm">Learn More</Button>
-            </div>
-            
-            <div className="border border-studio-100 rounded-lg p-8 transition-all hover:shadow-md">
-              <h3 className="text-xl font-medium mb-3">Technical Assistance</h3>
-              <p className="text-studio-600 mb-4">
-                On-site engineer available to help with equipment setup and operation.
-              </p>
-              <Button variant="ghost" size="sm">Learn More</Button>
-            </div>
-            
-            <div className="border border-studio-100 rounded-lg p-8 transition-all hover:shadow-md">
-              <h3 className="text-xl font-medium mb-3">Distribution Support</h3>
-              <p className="text-studio-600 mb-4">
-                Guidance on publishing your podcast to major platforms and growing your audience.
-              </p>
-              <Button variant="ghost" size="sm">Learn More</Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-16 bg-studio-900 text-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Record?</h2>
+          <h2 className="text-3xl font-bold mb-6">Ready to Create?</h2>
           <p className="text-white/80 max-w-2xl mx-auto mb-8">
-            Book your session now and take advantage of our professional studio space and equipment.
+            Book your session now and take advantage of our professional studio spaces and equipment.
           </p>
           <Button 
             to="/booking" 

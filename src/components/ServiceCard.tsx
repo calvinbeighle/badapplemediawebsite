@@ -11,6 +11,7 @@ interface ServiceCardProps {
   className?: string;
   buttonText?: string;
   buttonVariant?: "primary" | "secondary" | "outline" | "ghost";
+  icon?: React.ReactNode;
 }
 
 const ServiceCard = ({
@@ -22,6 +23,7 @@ const ServiceCard = ({
   className,
   buttonText = "Learn More",
   buttonVariant = "outline",
+  icon,
 }: ServiceCardProps) => {
   return (
     <div
@@ -31,16 +33,19 @@ const ServiceCard = ({
       )}
     >
       {imageSrc && (
-        <div className="relative h-48 w-full overflow-hidden">
+        <div className="relative h-64 w-full overflow-hidden">
           <img
             src={imageSrc}
             alt={title}
-            className="object-cover w-full h-full transition-transform duration-450 group-hover:scale-105"
+            className="object-cover w-full h-full transition-transform duration-450 hover:scale-105"
           />
         </div>
       )}
       <div className="p-6">
-        <h3 className="text-xl font-medium mb-2">{title}</h3>
+        <div className="flex items-center mb-2">
+          {icon && <span className="mr-2">{icon}</span>}
+          <h3 className="text-xl font-medium">{title}</h3>
+        </div>
         <div className="mb-3">
           <span className="text-2xl font-bold">{price}</span>
         </div>
