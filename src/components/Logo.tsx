@@ -10,7 +10,7 @@ interface LogoProps {
 const Logo = ({ className, size = 75, showText = true }: LogoProps) => {
   return (
     <Link to="/" className={`flex items-center gap-0.5 transition-opacity hover:opacity-80 ${className}`}>
-      <div className="flex items-center">
+      <div className="flex items-center -mt-1">
         <img 
           src="/lovable-uploads/281a642b-77e8-40ea-acfb-1cacb20d94da.png" 
           alt="Bad Apple Media Logo" 
