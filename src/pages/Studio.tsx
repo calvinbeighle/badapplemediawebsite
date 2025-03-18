@@ -186,7 +186,7 @@ const Studio = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
+            <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl pt-6">
               <img
                 src="public/lovable-uploads/0f7668ed-d3fe-4545-9fc4-4ec53a6a6c05.png"
                 alt="Cyc Wall Studio"
