@@ -106,11 +106,11 @@ const Booking = () => {
                       <div>
                         <h3 className="text-lg font-medium mb-1">Visit Us</h3>
                         <p className="text-studio-800 mb-1">
-                          123 Podcast Avenue <br />
-                          San Francisco, CA 94103
+                          1121 W Exposition Blvd <br />
+                          Los Angeles, CA 90007
                         </p>
                         <p className="text-studio-600 mt-3">
-                          Near Downtown SF, with convenient access to public transportation and parking nearby.
+                          Near USC campus, with convenient access to public transportation and parking nearby.
                         </p>
                       </div>
                     </div>
