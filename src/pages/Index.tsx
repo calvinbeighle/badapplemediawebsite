@@ -10,11 +10,11 @@ const Index = () => {
       <section className="relative h-screen flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=2000"
-            alt="Studio Microphone"
+            src="/lovable-uploads/4879c092-a6ae-47fd-8854-940888676c5f.png"
+            alt="Studio Equipment with Producer"
             className="object-cover w-full h-full"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent"></div>
         </div>
         
         <div className="relative z-10 max-w-4xl mx-auto text-center px-6">
