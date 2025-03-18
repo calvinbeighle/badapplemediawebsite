@@ -15,7 +15,7 @@ const Logo = ({ className, size = 75, showText = true }: LogoProps) => {
         alt="Bad Apple Media Logo" 
         width={size} 
         height={size} 
-        className="object-contain -mt-2" 
+        className="object-contain -mt-1.5" 
       />
       {showText && (
         <span className="text-xl md:text-2xl font-bold tracking-tighter text-white">
