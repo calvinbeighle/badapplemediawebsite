@@ -10,13 +10,15 @@ interface LogoProps {
 const Logo = ({ className, size = 75, showText = true }: LogoProps) => {
   return (
     <Link to="/" className={`flex items-center gap-0.5 transition-opacity hover:opacity-80 ${className}`}>
-      <img 
-        src="/lovable-uploads/281a642b-77e8-40ea-acfb-1cacb20d94da.png" 
-        alt="Bad Apple Media Logo" 
-        width={size} 
-        height={size} 
-        className="object-contain -mt-1.5" 
-      />
+      <div className="flex items-center">
+        <img 
+          src="/lovable-uploads/281a642b-77e8-40ea-acfb-1cacb20d94da.png" 
+          alt="Bad Apple Media Logo" 
+          width={size} 
+          height={size} 
+          className="object-contain" 
+        />
+      </div>
       {showText && (
         <span className="text-xl md:text-2xl font-bold tracking-tighter text-white">
           BAD APPLE MEDIA
