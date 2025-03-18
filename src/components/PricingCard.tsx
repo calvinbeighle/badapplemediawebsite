@@ -25,13 +25,13 @@ const PricingCard = ({
       className={cn(
         "bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-350 hover:shadow-md border relative",
         popular
-          ? "border-studio-900 scale-105 z-10 shadow-md"
+          ? "border-[#FCE4EC] scale-105 z-10 shadow-md"
           : "border-studio-100",
         className
       )}
     >
       {popular && (
-        <div className="absolute top-0 right-0 bg-studio-900 text-white text-xs font-medium py-1 px-3 rounded-bl-md">
+        <div className="absolute top-0 right-0 bg-[#FCE4EC] text-black text-xs font-medium py-1 px-3 rounded-bl-md">
           Most Popular
         </div>
       )}
@@ -56,7 +56,10 @@ const PricingCard = ({
         <Button
           to="/booking"
           variant={popular ? "primary" : "outline"}
-          className="w-full"
+          className={cn(
+            "w-full",
+            popular ? "" : "hover:border-[#FCE4EC] hover:text-[#FCE4EC]"
+          )}
         >
           Book Now
         </Button>

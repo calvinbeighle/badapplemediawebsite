@@ -29,10 +29,10 @@ const Button = ({
 
       // Color Variants
       "bg-white text-black hover:bg-gray-100": variant === "primary",
-      "bg-studio-100 text-white hover:bg-studio-200": variant === "secondary",
+      "bg-[#FCE4EC] text-black hover:bg-[#F8BBD0]": variant === "secondary",
       "bg-transparent border border-white text-white hover:bg-white/10":
         variant === "outline",
-      "bg-transparent text-white hover:bg-white/10": variant === "ghost",
+      "bg-transparent text-white hover:bg-[#FCE4EC]/10": variant === "ghost",
     },
     className
   );
