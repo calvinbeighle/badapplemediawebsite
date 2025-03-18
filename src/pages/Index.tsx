@@ -14,7 +14,7 @@ const Index = () => {
             alt="Producer working in studio with laptop and equipment"
             className="object-cover w-full h-full"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/30"></div>
         </div>
         
         <div className="relative z-10 max-w-4xl mx-auto text-center px-6">
@@ -42,7 +42,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.6 }}
           >
-            <Button to="/booking" size="lg" className="bg-red-600 hover:bg-red-700">
+            <Button to="/booking" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold">
               Book Studio Time
             </Button>
             <Button to="/studio" variant="outline" size="lg" className="text-white border-white hover:bg-white/10">
@@ -52,7 +52,7 @@ const Index = () => {
         </div>
         
         <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">
-          <ArrowRight size={28} className="text-white transform rotate-90" />
+          <ArrowRight size={28} className="text-yellow-400 transform rotate-90" />
         </div>
       </section>
 
@@ -68,8 +68,8 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-studio-50 p-8 rounded-lg transition-transform hover:translate-y-[-5px]">
-              <div className="mb-4 bg-red-100 p-3 rounded-full w-fit">
-                <Mic size={24} className="text-red-600" />
+              <div className="mb-4 bg-yellow-100 p-3 rounded-full w-fit">
+                <Mic size={24} className="text-yellow-600" />
               </div>
               <h3 className="text-xl font-medium mb-2">Professional Equipment</h3>
               <p className="text-studio-600">
@@ -78,8 +78,8 @@ const Index = () => {
             </div>
             
             <div className="bg-studio-50 p-8 rounded-lg transition-transform hover:translate-y-[-5px]">
-              <div className="mb-4 bg-red-100 p-3 rounded-full w-fit">
-                <Users size={24} className="text-red-600" />
+              <div className="mb-4 bg-yellow-100 p-3 rounded-full w-fit">
+                <Users size={24} className="text-yellow-600" />
               </div>
               <h3 className="text-xl font-medium mb-2">Comfortable Space</h3>
               <p className="text-studio-600">
@@ -88,8 +88,8 @@ const Index = () => {
             </div>
             
             <div className="bg-studio-50 p-8 rounded-lg transition-transform hover:translate-y-[-5px]">
-              <div className="mb-4 bg-red-100 p-3 rounded-full w-fit">
-                <Clock size={24} className="text-red-600" />
+              <div className="mb-4 bg-yellow-100 p-3 rounded-full w-fit">
+                <Clock size={24} className="text-yellow-600" />
               </div>
               <h3 className="text-xl font-medium mb-2">Flexible Booking</h3>
               <p className="text-studio-600">
@@ -101,17 +101,17 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 bg-red-600 text-white">
+      <section className="relative py-20 bg-yellow-500 text-black">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Record Your Next Episode?</h2>
-          <p className="text-white/80 max-w-2xl mx-auto mb-10">
+          <p className="text-black/80 max-w-2xl mx-auto mb-10">
             Our studio is equipped with everything you need to create professional podcasts. Book your session today.
           </p>
           <Button 
             to="/booking" 
             variant="outline" 
             size="lg"
-            className="border-white text-white hover:bg-white hover:text-red-600"
+            className="border-black text-black hover:bg-black hover:text-yellow-500 font-semibold"
           >
             Book Your Session
           </Button>

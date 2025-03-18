@@ -35,13 +35,13 @@ const Navbar = () => {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-350 px-6 md:px-10",
         isScrolled
           ? "py-4 bg-white/90 backdrop-blur-md shadow-sm"
-          : "py-6 bg-transparent"
+          : "py-6 bg-black/40 backdrop-blur-sm"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link
           to="/"
-          className="text-xl md:text-2xl font-bold tracking-tighter transition-opacity hover:opacity-80 text-red-600"
+          className="text-xl md:text-2xl font-bold tracking-tighter transition-opacity hover:opacity-80 text-yellow-400"
         >
           BAD APPLE MEDIA
         </Link>
@@ -55,10 +55,10 @@ const Navbar = () => {
               className={cn(
                 "text-sm font-medium transition-all duration-250 hover:opacity-70",
                 link.path === location.pathname
-                  ? "text-black opacity-100"
+                  ? "text-white opacity-100 font-semibold"
                   : link.path === "/booking" 
-                    ? "text-red-600 opacity-90" 
-                    : "text-studio-600 opacity-90"
+                    ? "text-yellow-400 opacity-90" 
+                    : "text-white opacity-90"
               )}
             >
               {link.name}
@@ -68,7 +68,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden flex items-center text-studio-900"
+          className="md:hidden flex items-center text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
         >
@@ -79,7 +79,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={cn(
-          "fixed inset-0 bg-white z-40 pt-24 px-6 transform transition-transform duration-350 ease-in-out md:hidden",
+          "fixed inset-0 bg-black/95 z-40 pt-24 px-6 transform transition-transform duration-350 ease-in-out md:hidden",
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
@@ -91,10 +91,10 @@ const Navbar = () => {
               className={cn(
                 "text-lg font-medium transition-all duration-250",
                 link.path === location.pathname
-                  ? "text-black"
+                  ? "text-white"
                   : link.path === "/booking" 
-                    ? "text-red-600" 
-                    : "text-studio-600"
+                    ? "text-yellow-400" 
+                    : "text-white/80"
               )}
             >
               {link.name}

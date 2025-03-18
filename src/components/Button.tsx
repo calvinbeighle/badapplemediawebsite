@@ -20,7 +20,7 @@ const Button = ({
   ...props
 }: ButtonProps) => {
   const baseStyles = cn(
-    "inline-flex items-center justify-center font-medium transition-all duration-250 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-600 disabled:opacity-50 disabled:pointer-events-none",
+    "inline-flex items-center justify-center font-medium transition-all duration-250 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 disabled:opacity-50 disabled:pointer-events-none",
     {
       // Size Variants
       "text-xs px-3 py-1.5 rounded": size === "sm",
@@ -28,11 +28,11 @@ const Button = ({
       "text-base px-7 py-3 rounded-md": size === "lg",
 
       // Color Variants
-      "bg-red-600 text-white hover:bg-red-700": variant === "primary",
-      "bg-studio-100 text-red-600 hover:bg-studio-200": variant === "secondary",
-      "bg-transparent border border-red-600 text-red-600 hover:bg-red-50":
+      "bg-yellow-500 text-black hover:bg-yellow-600": variant === "primary",
+      "bg-studio-100 text-yellow-600 hover:bg-studio-200": variant === "secondary",
+      "bg-transparent border border-yellow-500 text-yellow-500 hover:bg-yellow-50":
         variant === "outline",
-      "bg-transparent text-red-600 hover:bg-red-50": variant === "ghost",
+      "bg-transparent text-yellow-500 hover:bg-yellow-50": variant === "ghost",
     },
     className
   );
