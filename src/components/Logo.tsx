@@ -11,11 +11,11 @@ const Logo = ({ className, size = 85, showText = true }: LogoProps) => {
   return (
     <Link to="/" className={`flex items-center gap-0.5 transition-opacity hover:opacity-80 ${className}`}>
       <img 
-        src="/lovable-uploads/fd7998ba-9e01-4cd3-a65c-c9b4f32dc072.png" 
+        src="/lovable-uploads/281a642b-77e8-40ea-acfb-1cacb20d94da.png" 
         alt="Bad Apple Media Logo" 
         width={size} 
         height={size} 
-        className="object-contain"
+        className="object-contain -mt-1" 
       />
       {showText && (
         <span className="text-xl md:text-2xl font-bold tracking-tighter text-white">
