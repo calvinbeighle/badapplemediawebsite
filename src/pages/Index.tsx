@@ -24,7 +24,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            Your Space To Speak
+            Your <span className="text-purple-100">Space</span> To Speak
           </motion.h1>
           
           <motion.p 
@@ -42,7 +42,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.6 }}
           >
-            <Button to="/booking" size="lg" className="bg-white hover:bg-gray-100 text-black font-bold">
+            <Button to="/booking" size="lg" className="bg-purple-500 hover:bg-purple-600 text-white font-bold">
               Book Studio Time
             </Button>
             <Button to="/studio" variant="outline" size="lg" className="text-white border-white hover:bg-white/10">
@@ -52,7 +52,7 @@ const Index = () => {
         </div>
         
         <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">
-          <ArrowRight size={28} className="text-white transform rotate-90" />
+          <ArrowRight size={28} className="text-purple-100" />
         </div>
       </section>
 
@@ -60,16 +60,16 @@ const Index = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Our Studio</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why <span className="text-purple-500">Choose</span> Our Studio</h2>
             <p className="text-studio-600 max-w-2xl mx-auto">
               We provide everything you need to create professional-quality podcasts in a comfortable, inspiring environment.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-studio-50 p-8 rounded-lg transition-transform hover:translate-y-[-5px]">
-              <div className="mb-4 bg-gray-100 p-3 rounded-full w-fit">
-                <Mic size={24} className="text-gray-600" />
+            <div className="bg-studio-50 p-8 rounded-lg transition-transform hover:translate-y-[-5px] border border-transparent hover:border-purple-100">
+              <div className="mb-4 bg-purple-100/30 p-3 rounded-full w-fit">
+                <Mic size={24} className="text-purple-500" />
               </div>
               <h3 className="text-xl font-medium mb-2">Professional Equipment</h3>
               <p className="text-studio-600">
@@ -77,9 +77,9 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="bg-studio-50 p-8 rounded-lg transition-transform hover:translate-y-[-5px]">
-              <div className="mb-4 bg-gray-100 p-3 rounded-full w-fit">
-                <Users size={24} className="text-gray-600" />
+            <div className="bg-studio-50 p-8 rounded-lg transition-transform hover:translate-y-[-5px] border border-transparent hover:border-purple-100">
+              <div className="mb-4 bg-purple-100/30 p-3 rounded-full w-fit">
+                <Users size={24} className="text-purple-500" />
               </div>
               <h3 className="text-xl font-medium mb-2">Comfortable Space</h3>
               <p className="text-studio-600">
@@ -87,9 +87,9 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="bg-studio-50 p-8 rounded-lg transition-transform hover:translate-y-[-5px]">
-              <div className="mb-4 bg-gray-100 p-3 rounded-full w-fit">
-                <Clock size={24} className="text-gray-600" />
+            <div className="bg-studio-50 p-8 rounded-lg transition-transform hover:translate-y-[-5px] border border-transparent hover:border-purple-100">
+              <div className="mb-4 bg-purple-100/30 p-3 rounded-full w-fit">
+                <Clock size={24} className="text-purple-500" />
               </div>
               <h3 className="text-xl font-medium mb-2">Flexible Booking</h3>
               <p className="text-studio-600">
@@ -101,9 +101,9 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 bg-white text-black border-t border-gray-200">
+      <section className="relative py-20 bg-gradient-to-r from-purple-100/10 to-white text-black border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Record Your Next Episode?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to <span className="text-purple-500">Record</span> Your Next Episode?</h2>
           <p className="text-black/80 max-w-2xl mx-auto mb-10">
             Our studio is equipped with everything you need to create professional podcasts. Book your session today.
           </p>
@@ -111,7 +111,7 @@ const Index = () => {
             to="/booking" 
             variant="primary" 
             size="lg"
-            className="bg-black text-white hover:bg-gray-900 font-semibold"
+            className="bg-purple-500 hover:bg-purple-600 text-white font-semibold"
           >
             Book Your Session
           </Button>

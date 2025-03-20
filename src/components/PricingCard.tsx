@@ -25,13 +25,13 @@ const PricingCard = ({
       className={cn(
         "bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-350 hover:shadow-md border relative",
         popular
-          ? "border-purple-200 scale-105 z-10 shadow-md"
-          : "border-studio-100",
+          ? "border-purple-300 scale-105 z-10 shadow-md"
+          : "border-studio-100 hover:border-purple-200",
         className
       )}
     >
       {popular && (
-        <div className="absolute top-0 right-0 bg-purple-100 text-purple-900 text-xs font-medium py-1 px-3 rounded-bl-md">
+        <div className="absolute top-0 right-0 bg-purple-500 text-white text-xs font-medium py-1 px-3 rounded-bl-md">
           Most Popular
         </div>
       )}
@@ -39,7 +39,7 @@ const PricingCard = ({
         <h3 className="text-xl font-medium mb-2">{title}</h3>
         <div className="mb-4">
           <span className="text-3xl font-bold">{price}</span>
-          <span className="text-studio-500 ml-1">/hour</span>
+          <span className="text-purple-500 ml-1">/hour</span>
         </div>
         <p className="text-studio-600 mb-6">{description}</p>
         <div className="space-y-3 mb-8">
@@ -47,7 +47,7 @@ const PricingCard = ({
             <div key={index} className="flex items-start">
               <Check
                 size={16}
-                className="mr-2 mt-1 text-purple-400 flex-shrink-0"
+                className="mr-2 mt-1 text-purple-500 flex-shrink-0"
               />
               <span className="text-sm text-studio-700">{feature}</span>
             </div>
