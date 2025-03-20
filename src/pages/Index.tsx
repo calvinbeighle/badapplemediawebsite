@@ -18,7 +18,7 @@ const Index = () => {
         
         <div className="relative z-10 max-w-4xl mx-auto text-center px-6">
           <motion.h1 
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-regular text-white mb-6 leading-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
@@ -32,7 +32,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
-            State-of-the-art recording studio designed for podcast creators who demand exceptional quality.
+            A state-of-the-art studio for creators who demand exceptional quality.
           </motion.p>
           
           <motion.div 
