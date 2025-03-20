@@ -1,4 +1,3 @@
-
 import { ArrowRight, Mic, Users, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
@@ -24,7 +23,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            Your <span className="text-white">Space</span> To Speak
+            YOUR <span className="text-white">SPACE</span> TO SPEAK
           </motion.h1>
           
           <motion.p 
