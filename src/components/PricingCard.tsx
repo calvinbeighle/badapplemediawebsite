@@ -39,7 +39,7 @@ const PricingCard = ({
         <h3 className="text-xl font-medium mb-2">{title}</h3>
         <div className="mb-4">
           <span className="text-3xl font-bold">{price}</span>
-          <span className="text-purple-500 ml-1">/hour</span>
+          <span className="text-gray-500 ml-1">/hour</span>
         </div>
         <p className="text-studio-600 mb-6">{description}</p>
         <div className="space-y-3 mb-8">

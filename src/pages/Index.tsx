@@ -24,7 +24,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            Your <span className="text-purple-100">Space</span> To Speak
+            Your <span className="text-white">Space</span> To Speak
           </motion.h1>
           
           <motion.p 
@@ -52,7 +52,7 @@ const Index = () => {
         </div>
         
         <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">
-          <ArrowRight size={28} className="text-purple-100" />
+          <ArrowRight size={28} className="text-white" />
         </div>
       </section>
 
@@ -60,7 +60,7 @@ const Index = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why <span className="text-purple-500">Choose</span> Our Studio</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why <span className="text-black">Choose</span> Our Studio</h2>
             <p className="text-studio-600 max-w-2xl mx-auto">
               We provide everything you need to create professional-quality podcasts in a comfortable, inspiring environment.
             </p>
@@ -103,7 +103,7 @@ const Index = () => {
       {/* CTA Section */}
       <section className="relative py-20 bg-gradient-to-r from-purple-100/10 to-white text-black border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to <span className="text-purple-500">Record</span> Your Next Episode?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to <span className="text-black">Record</span> Your Next Episode?</h2>
           <p className="text-black/80 max-w-2xl mx-auto mb-10">
             Our studio is equipped with everything you need to create professional podcasts. Book your session today.
           </p>
