@@ -24,7 +24,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            Premium Podcasting Space for Creative Minds
+            Your Space To Speak
           </motion.h1>
           
           <motion.p 
