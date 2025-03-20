@@ -1,4 +1,3 @@
-
 import { ArrowRight, Mic, Users, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
@@ -33,7 +32,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
-            A state-of-the-art studio for creators seeking exceptional quality.
+            State-of-the-art recording studio designed for podcast creators who demand exceptional quality.
           </motion.p>
           
           <motion.div 
