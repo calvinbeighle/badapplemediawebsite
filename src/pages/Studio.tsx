@@ -16,7 +16,7 @@ const Studio = () => {
     {
       title: "Microphones",
       description: "Shure SM7B, professional-grade microphone perfect for voice recording with excellent noise rejection.",
-      imageSrc: "https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200",
+      imageSrc: "/lovable-uploads/compressed_microphone2.png",
       icon: <Mic className="mb-2 h-6 w-6" />
     },
     {
