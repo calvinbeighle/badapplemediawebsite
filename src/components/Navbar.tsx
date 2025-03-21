@@ -8,7 +8,6 @@ import Logo from "./Logo";
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "Studio", path: "/studio" },
-  { name: "Case Studies", path: "/case-studies" },
   { name: "Pricing", path: "/pricing" },
   { name: "Book Now", path: "/booking" },
 ];
