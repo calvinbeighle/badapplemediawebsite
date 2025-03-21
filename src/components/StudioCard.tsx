@@ -1,11 +1,13 @@
 
 import { cn } from "@/lib/utils";
+import React from "react";
 
 interface StudioCardProps {
   title: string;
   description: string;
   imageSrc?: string;
   className?: string;
+  icon?: React.ReactNode;
 }
 
 const StudioCard = ({
@@ -13,6 +15,7 @@ const StudioCard = ({
   description,
   imageSrc,
   className,
+  icon,
 }: StudioCardProps) => {
   return (
     <div
@@ -31,6 +34,7 @@ const StudioCard = ({
         </div>
       )}
       <div className="p-6">
+        {icon && <div className="mb-3 text-studio-700">{icon}</div>}
         <h3 className="text-xl font-medium mb-2">{title}</h3>
         <p className="text-studio-600">{description}</p>
       </div>

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mic, Camera, Monitor, PlaySquare } from "lucide-react";
+import { Mic, Camera, Monitor, PlaySquare, Headphones } from "lucide-react";
 import StudioCard from "@/components/StudioCard";
 import ServiceCard from "@/components/ServiceCard";
 import Button from "@/components/Button";
@@ -15,34 +15,37 @@ const Studio = () => {
   const equipmentList = [
     {
       title: "Microphones",
-      description: "4× Shure SM7B, perfect for voice recording with excellent noise rejection.",
+      description: "Shure SM7B, professional-grade microphone perfect for voice recording with excellent noise rejection.",
       imageSrc: "https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200",
       icon: <Mic className="mb-2 h-6 w-6" />
     },
     {
-      title: "Audio Interface",
-      description: "RME Fireface UCX II, 40-channel USB audio interface with exceptional sound quality.",
+      title: "Rodecaster Pro 2",
+      description: "Professional audio mixer designed specifically for podcasting with built-in effects and multitrack recording.",
       imageSrc: "https://images.unsplash.com/photo-1558392204-ac78741f4abf?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200",
       icon: <Monitor className="mb-2 h-6 w-6" />
     },
     {
-      title: "Headphones",
-      description: "4× Sony MDR-7506, industry-standard closed-back headphones for monitoring.",
-      imageSrc: "https://images.unsplash.com/photo-1545127398-14699f92334b?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200"
+      title: "Sony FX30 Cameras",
+      description: "2× Sony FX30 professional cinema cameras featuring Super 35mm sensors for stunning 4K video.",
+      imageSrc: "https://images.unsplash.com/photo-1590499189232-5400930c6551?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200",
+      icon: <Camera className="mb-2 h-6 w-6" />
     },
     {
-      title: "Digital Recorder",
-      description: "Zoom H6, 6-track portable recorder for backup and mobile recording.",
-      imageSrc: "https://images.unsplash.com/photo-1590499189232-5400930c6551?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200"
+      title: "Sony A7SIII",
+      description: "Full-frame mirrorless camera with exceptional low-light performance and advanced video capabilities.",
+      imageSrc: "https://images.unsplash.com/photo-1520866908487-957865ba2929?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200",
+      icon: <Camera className="mb-2 h-6 w-6" />
+    },
+    {
+      title: "Headphones",
+      description: "4× Sony MDR-7506, industry-standard closed-back headphones for monitoring.",
+      imageSrc: "https://images.unsplash.com/photo-1545127398-14699f92334b?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200",
+      icon: <Headphones className="mb-2 h-6 w-6" />
     },
     {
       title: "Acoustic Treatment",
       description: "Premium sound panels and bass traps for professional-grade sound isolation.",
-      imageSrc: "https://images.unsplash.com/photo-1520866908487-957865ba2929?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200"
-    },
-    {
-      title: "Monitoring",
-      description: "Yamaha HS5 studio monitors for accurate sound reproduction during editing.",
       imageSrc: "https://images.unsplash.com/photo-1585536309334-033e3e708d0c?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200"
     }
   ];
