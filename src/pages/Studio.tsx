@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Mic, Camera, Monitor, PlaySquare, Headphones } from "lucide-react";
 import StudioCard from "@/components/StudioCard";
@@ -34,7 +35,7 @@ const Studio = () => {
     {
       title: "Sony A7SIII",
       description: "Full-frame mirrorless camera with exceptional low-light performance and advanced video capabilities.",
-      imageSrc: "https://images.unsplash.com/photo-1520866908487-957865ba2929?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200",
+      imageSrc: "/lovable-uploads/compressed_sonylong.png",
       icon: <Camera className="mb-2 h-6 w-6" />
     },
     {
