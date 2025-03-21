@@ -1,6 +1,7 @@
 
 import { cn } from "@/lib/utils";
-import React from "react";
+import React, { useState } from "react";
+import { Skeleton } from "@/components/ui/skeleton";
 
 interface StudioCardProps {
   title: string;
@@ -17,6 +18,17 @@ const StudioCard = ({
   className,
   icon,
 }: StudioCardProps) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageError, setImageError] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
+  const handleImageError = () => {
+    setImageError(true);
+  };
+
   return (
     <div
       className={cn(
@@ -26,10 +38,20 @@ const StudioCard = ({
     >
       {imageSrc && (
         <div className="relative h-48 w-full overflow-hidden">
+          {!imageLoaded && !imageError && (
+            <Skeleton className="h-full w-full absolute inset-0" />
+          )}
           <img
             src={imageSrc}
             alt={title}
-            className="object-cover w-full h-full transition-transform duration-450 group-hover:scale-105"
+            className={cn(
+              "object-cover w-full h-full transition-all duration-500",
+              imageLoaded ? "opacity-100 scale-100" : "opacity-0 scale-95",
+              "group-hover:scale-105"
+            )}
+            onLoad={handleImageLoad}
+            onError={handleImageError}
+            loading="lazy"
           />
         </div>
       )}
