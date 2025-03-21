@@ -1,4 +1,3 @@
-
 import { cn } from "@/lib/utils";
 import Button from "./Button";
 import { useState } from "react";
@@ -54,9 +53,10 @@ const ServiceCard = ({
             src={imageSrc}
             alt={title}
             className={cn(
-              "object-cover w-full h-full transition-all duration-500",
-              imageLoaded ? "opacity-100 scale-100" : "opacity-0 scale-95",
-              "hover:scale-105"
+              "absolute inset-0 w-full h-[150%] object-cover transition-all duration-500",
+              imageLoaded ? "opacity-100" : "opacity-0",
+              "hover:scale-105",
+              title === "Cyc Wall Studio" ? "object-[center_35%]" : "object-center"
             )}
             onLoad={handleImageLoad}
             onError={handleImageError}
