@@ -61,7 +61,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Why <span className="text-black">Choose</span> Our Studio</h2>
             <p className="text-studio-600 max-w-2xl mx-auto">
-              We provide everything you need to create professional-quality podcasts in a comfortable, inspiring environment.
+              We provide everything you need to create professional podcasts in a comfortable, inspiring environment.
             </p>
           </div>
           
@@ -82,7 +82,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-medium mb-2">Comfortable Space</h3>
               <p className="text-studio-600">
-                Designed for up to 4 people with comfortable seating and perfect acoustics.
+                Designed for up to 6 people with comfortable seating and perfect acoustics.
               </p>
             </div>
             
@@ -104,7 +104,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to <span className="text-black">Record</span> Your Next Episode?</h2>
           <p className="text-black/80 max-w-2xl mx-auto mb-10">
-            Our studio is equipped with everything you need to create professional podcasts. Book your session today.
+            Our studio is equipped with everything you need to create professional podcasts.<br></br> Book your session below.
           </p>
           <Button 
             to="/booking" 

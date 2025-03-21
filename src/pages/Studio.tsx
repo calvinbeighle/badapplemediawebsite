@@ -27,7 +27,7 @@ const Studio = () => {
     },
     {
       title: "Sony FX30 Cameras",
-      description: "2× Sony FX30 professional cinema cameras featuring Super 35mm sensors for stunning 4K video.",
+      description: "Sony FX30 professional cinema cameras featuring Super 35mm sensors for stunning 4K video.",
       imageSrc: "/lovable-uploads/web_compressed_sonyalpha7s.png",
       icon: <Camera className="mb-2 h-6 w-6" />
     },
@@ -39,7 +39,7 @@ const Studio = () => {
     },
     {
       title: "Headphones",
-      description: "4× Sony MDR-7506, industry-standard closed-back headphones for monitoring.",
+      description: "Sony MDR-7506, industry-standard closed-back headphones for monitoring.",
       imageSrc: "https://images.unsplash.com/photo-1545127398-14699f92334b?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200",
       icon: <Headphones className="mb-2 h-6 w-6" />
     },
@@ -166,7 +166,7 @@ const Studio = () => {
             <div className="order-2 md:order-1">
               <h2 className="text-3xl font-bold mb-6">State-of-the-Art Recording Space</h2>
               <p className="text-studio-600 mb-6">
-                Our professionally designed studio features acoustic treatment for pristine sound quality and comfortable seating for up to four people. The space includes a dedicated control room and recording booth, ensuring separation between hosts and guests when needed.
+                Our professionally designed studio features acoustic treatment for pristine sound quality and comfortable seating for up to six people. The space includes a dedicated control room and recording booth, ensuring separation between hosts and guests when needed.
               </p>
               <p className="text-studio-600 mb-8">
                 With adjustable lighting, climate control, and a relaxing atmosphere, you'll be able to focus entirely on creating great content without technical distractions.
@@ -202,7 +202,7 @@ const Studio = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6">Professional Cyc Wall</h2>
               <p className="text-studio-600 mb-6">
-                Our cyc wall provides a seamless background for photography, videography, and product shoots. Perfect for e-commerce, corporate videos, advertisements, and creative projects.
+                Our cyc wall provides a seamless background for photography, videography, and product shoots. It is perfect for e-commerce, corporate videos, advertisements, and creative projects.
               </p>
               <p className="text-studio-600 mb-8">
                 With professional lighting equipment and ample space, you can create stunning visuals with endless possibilities for customization.
@@ -220,7 +220,7 @@ const Studio = () => {
             <div className="order-2 md:order-1">
               <h2 className="text-3xl font-bold mb-6">RGB Lighting Environment</h2>
               <p className="text-studio-600 mb-6">
-                Create visually stunning content with our customizable RGB lighting setup. Perfect for interviews, creative portraits, and promotional content that demands a unique visual aesthetic.
+                Create visually stunning content with our customizable RGB lighting setup. Great for interviews, creative portraits, and promotional content that demands a unique visual aesthetic.
               </p>
               <p className="text-studio-600 mb-8">
                 Our lighting technicians can help you achieve the perfect look for your project, whether you need subtle accents or bold, dramatic effects.

@@ -66,20 +66,14 @@ const Booking = () => {
                       <Mail className="mr-4 text-studio-900" size={24} />
                       <div>
                         <h3 className="text-lg font-medium mb-1">Email Us</h3>
-                        <p className="text-studio-600 mb-1">For general inquiries:</p>
+                  
                         <a 
-                          href="mailto:info@podstudio.com" 
+                          href="mailto:jordan@badapplemediala.com" 
                           className="text-studio-900 hover:underline"
                         >
-                          info@podstudio.com
+                          jordan@badapplemediala.com
                         </a>
-                        <p className="text-studio-600 mt-3 mb-1">For booking questions:</p>
-                        <a 
-                          href="mailto:bookings@podstudio.com" 
-                          className="text-studio-900 hover:underline"
-                        >
-                          bookings@podstudio.com
-                        </a>
+            
                       </div>
                     </div>
                     
@@ -89,10 +83,10 @@ const Booking = () => {
                         <h3 className="text-lg font-medium mb-1">Call Us</h3>
                         <p className="text-studio-600 mb-1">Studio reception:</p>
                         <a 
-                          href="tel:+14155559876" 
+                          href="tel:18595533631" 
                           className="text-studio-900 hover:underline"
                         >
-                          (415) 555-9876
+                          1 (859) 553-3631
                         </a>
                         <p className="text-studio-600 mt-3 mb-1">Hours:</p>
                         <p className="text-studio-800">Monday to Friday: 9am - 9pm</p>
@@ -160,14 +154,14 @@ const Booking = () => {
                   </p>
                   <div className="flex space-x-4">
                     <a
-                      href="tel:+14155559876"
+                      href="tel:18595533631"
                       className="inline-flex items-center justify-center px-4 py-2 border border-white text-sm font-medium rounded-md text-white hover:bg-white hover:text-studio-900 transition-colors"
                     >
                       <Phone size={16} className="mr-2" />
                       Call Us
                     </a>
                     <a
-                      href="mailto:info@podstudio.com"
+                      href="mailto:jordan@badapplemediala.com"
                       className="inline-flex items-center justify-center px-4 py-2 border border-white text-sm font-medium rounded-md text-white hover:bg-white hover:text-studio-900 transition-colors"
                     >
                       <Mail size={16} className="mr-2" />
