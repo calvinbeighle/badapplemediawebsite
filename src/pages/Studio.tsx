@@ -46,7 +46,7 @@ const Studio = () => {
     {
       title: "Acoustic Treatment",
       description: "Premium sound panels and bass traps for professional-grade sound isolation.",
-      imageSrc: "https://images.unsplash.com/photo-1585536309334-033e3e708d0c?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200"
+      imageSrc: "/lovable-uploads/audio.png"
     }
   ];
 
