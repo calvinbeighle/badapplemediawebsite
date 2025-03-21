@@ -28,7 +28,7 @@ const Studio = () => {
     {
       title: "Sony FX30 Cameras",
       description: "2× Sony FX30 professional cinema cameras featuring Super 35mm sensors for stunning 4K video.",
-      imageSrc: "https://images.unsplash.com/photo-1590499189232-5400930c6551?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200",
+      imageSrc: "/lovable-uploads/compressed_sonyalpha7s.png",
       icon: <Camera className="mb-2 h-6 w-6" />
     },
     {
