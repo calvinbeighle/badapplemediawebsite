@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bad Apple Media Team</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Emberly:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bangla+MN:wght@400&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="about">
+    <!-- Navigation Links -->
+    <div class="nav-container">
+      <div class="nav-left" id="navLeft" style="opacity: 0; position: fixed; left: 25%; transform: translateX(-50%); z-index: 100;">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="gallery.html" class="nav-link">GALLERY</a>
+      </div>
+      <h1 class="page-header" style="position: absolute;">ABOUT</h1>
+      <div class="nav-right" id="navRight" style="opacity: 0; position: fixed; right: 25%; transform: translateX(50%); z-index: 100;">
+        <a href="services.html" class="nav-link">SERVICES</a>
+        <a href="contact.html" class="nav-link">CONTACT</a>
+      </div>
+    </div>
+
+    <!-- Background Videos -->
+    <div class="container" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+      <video class="background-video" autoplay muted loop style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
+        <source src="./assets/images/building.mp4" type="video/mp4" />
+      </video>
+    </div>
+<!--     
+    <div class="container" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+      <video class="background-video" autoplay muted loop style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
+        <source src="./assets/images/Shooting.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="container" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+      <video class="background-video" autoplay muted loop style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
+        <source src="./assets/images/Styling.mp4" type="video/mp4" />
+      </video>
+    </div> -->
+
+    <!-- Main Content -->
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <p class="about-text">
+      TALK SHOP STUDIO is a premier podcasting space nestled in the heart of West Adams, LA. Here, you’ll find state-of-the-art equipment and expert support to bring your unique voice to life. Elevate your storytelling experience and captivate your audience in our creative haven.
+    </p>
+    <br /><br /><br /><br /><br /><br />
+    <h1 class="team-header" style="position: absolute;">TEAM</h1>
+    <br /><br /><br />
+    <div class="image-container">
+      <div class="person-container">
+        <div class="content-row">
+          <img
+            src="assets/images/eric.png"
+            alt="Jordan"
+            class="square-image"
+          />
+          <div class="text-container">
+            <span class="name-title">
+              <a href="https://www.instagram.com/born_eric/"
+                >ERIC BORNSTEIN</a
+              >
+            </span>
+            <br />
+            <p class="bio-text">
+              ERIC BORNSTEIN is the CEO of Bad Apple Media, a leading podcast
+              production company celebrated for its innovative and engaging
+              content. 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="person-container">
+        <div class="content-row">
+          <img
+            src="assets/images/jordan.png"
+            alt="Eric"
+            class="square-image"
+          />
+          <div class="text-container">
+            <span class="name-title">
+              <a href="https://www.instagram.com/jordanwoodrum__/">JORDAN WOODRUM</a>
+            </span>
+            <br />
+            <p class="bio-text">
+              JORDAN WOODRUM is the CMO of Bad Apple Media, a leading podcast
+              production company celebrated for its innovative and engaging
+              content. 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="person-container">
+        <div class="content-row">
+          <img
+            src="assets/images/clayton.png"
+            alt="Clayton"
+            class="square-image"
+          />
+          <div class="text-container">
+            <span class="name-title">Clayton Smith</span>
+            <br />
+            <p class="bio-text">
+              CLAYTON SMITH is the COO of Bad Apple Media, a leading podcast
+              production company celebrated for its innovative and engaging
+              content. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2024 BAD APPLE MEDIA. ALL RIGHTS RESERVED.
+      </div>
+    </div>
+    <script>
+      document.addEventListener('mousemove', function(e) {
+        const navLeft = document.getElementById('navLeft');
+        const navRight = document.getElementById('navRight');
+        const viewportHeight = window.innerHeight;
+        const mouseY = e.clientY;
+        
+        // Check if mouse is in top third of viewport
+        if (mouseY <= viewportHeight / 2.5) {
+          navLeft.style.opacity = '1';
+          navRight.style.opacity = '1';
+          navLeft.style.transition = 'opacity 0.3s ease';
+          navRight.style.transition = 'opacity 0.3s ease';
+        } else {
+          navLeft.style.opacity = '0';
+          navRight.style.opacity = '0';
+        }
+      });
+    </script>
+  </body>
+</html>

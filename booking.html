@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Session - Bad Apple Media</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Emberly:wght@600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangla+MN:wght@400&display=swap" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Bangla MN", serif;
+      }
+
+      .container {
+        position: relative;
+        width: 100%;
+        height: 95vh;
+        overflow: hidden;
+        margin-top: 1vh;
+      }
+
+      .background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Place the video behind the content */
+}
+
+.background-video {
+  pointer-events: none; /* Makes the video non-interactive */
+}
+
+
+.content-container, .calendly-inline-widget {
+  position: relative;
+  z-index: 2; /* Ensure the content is above the video */
+}
+
+
+      .content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        padding-top: 110px; /* Added to shift calendly down */
+      }
+
+      .copyright {
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+        margin-top: 16px; /* Reduced by 20% from 20px */
+        font-family: "Bangla MN", serif;
+      }
+      .calendly-inline-widget {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 36px;
+  border-radius: 7px;
+}
+
+.calendly-inline-widget input,
+.calendly-inline-widget button,
+.calendly-inline-widget select {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+.calendly-inline-widget button:hover {
+  background: #fff;
+  color: #000;
+}
+
+      .nav-container {
+        text-align: center;
+        margin-bottom: 20px;
+        position: absolute;
+        top: 20px;
+        width: 100%;
+        z-index: 2;
+      }
+
+      .page-header {
+        color: #fff;
+        font-family: "Bangla MN", serif;
+        margin: 0;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="nav-container">
+        <div class="nav-left" id="navLeft" style="opacity: 0">
+          <a href="index.html" class="nav-link">HOME</a>
+          <a href="about.html" class="nav-link">ABOUT</a>
+        </div>
+        <h1 class="page-header" style="font-family: 'Emberly', serif; font-weight: 600; font-size: 110px;">BOOK NOW</h1>
+        <div class="nav-right" id="navRight" style="opacity: 0">
+          <a href="services.html" class="nav-link">SERVICES</a>
+          <a href="contact.html" class="nav-link">CONTACT</a>
+        </div>
+      </div>   
+    <div class="container">
+      <video class="background-video" autoplay muted loop>
+        <source src="./assets/images/PodcastVideo.mp4" type="video/mp4" />
+      </video>
+      
+      <div class="content-container">
+        <div class="calendly-inline-widget" data-url="https://calendly.com/calvin-angusmadethis/30min" style="min-width:700px; height:600px;"></div>
+        <script src="https://assets.calendly.com/assets/external/widget.js"></script>
+        <div class="copyright">© 2024 BAD APPLE MEDIA. ALL RIGHTS RESERVED.</div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener('mousemove', function(e) {
+      const navLeft = document.getElementById('navLeft');
+      const navRight = document.getElementById('navRight');
+      const viewportHeight = window.innerHeight;
+      const mouseY = e.clientY;
+      
+      // Add a small delay before hiding the navigation
+      if (mouseY <= viewportHeight / 2.5) {
+        navLeft.style.opacity = '1';
+        navRight.style.opacity = '1';
+        navLeft.style.transition = 'opacity 0.3s ease';
+        navRight.style.transition = 'opacity 0.3s ease';
+      } else {
+        // Add timeout to prevent immediate hiding
+        setTimeout(() => {
+          // Only hide if mouse is still below threshold
+          if (e.clientY > viewportHeight / 2.5) {
+            navLeft.style.opacity = '0';
+            navRight.style.opacity = '0';
+          }
+        }, 200); // 200ms delay
+      }
+    });
+  </script>
+</html>
