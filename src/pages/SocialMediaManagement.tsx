@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, TrendingUp, Instagram, Award, BarChart, Share2, MessageSquare } from "lucide-react";
@@ -6,25 +5,6 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Button } from "@/components/ui/button";
 
 const SocialMediaManagement = () => {
-  const packages = [
-    {
-      title: "Basic",
-      description: "Ideal for solo creators or those new to podcasting who need a simple, professional setup.",
-      price: "From $75/hour"
-    },
-    {
-      title: "Standard",
-      description: "Great for established podcasts looking to elevate their production quality with extra support and enhanced visuals.",
-      price: "From $125/hour",
-      popular: true
-    },
-    {
-      title: "Premium",
-      description: "A fully-equipped solution designed for creators who want top-tier production quality and hands-on technical expertise.",
-      price: "From $200/hour"
-    }
-  ];
-
   return (
     <div className="pt-20 bg-black">
       {/* Hero Section */}
@@ -54,7 +34,7 @@ const SocialMediaManagement = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            Podcast studios designed for creators—whether you're just starting out or leveling up
+            Strategic growth and engagement for creators and brands
           </motion.p>
         </div>
       </section>
@@ -94,21 +74,14 @@ const SocialMediaManagement = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Chris Howard */}
             <Card className="overflow-hidden transition-all hover:shadow-lg">
-              <CardHeader className="bg-gradient-to-r from-[#9b87f5] to-[#7E69AB] text-white">
+              <CardHeader className="bg-gradient-to-r from-purple-600 to-purple-800 text-white">
                 <div className="flex justify-between items-start">
                   <CardTitle>Chris Howard</CardTitle>
                   <TrendingUp className="h-6 w-6" />
                 </div>
                 <CardDescription className="text-purple-100">Content Creator</CardDescription>
               </CardHeader>
-              <div className="p-4">
-                <img 
-                  src="/assets/images/jordan.png" 
-                  alt="Chris Howard"
-                  className="w-full h-40 object-cover rounded-md"
-                />
-              </div>
-              <CardContent className="pt-2">
+              <CardContent className="pt-6">
                 <div className="space-y-4">
                   <div>
                     <h3 className="text-lg font-medium flex items-center gap-2">
@@ -165,13 +138,13 @@ const SocialMediaManagement = () => {
               </CardContent>
               <CardFooter className="bg-gray-50 border-t">
                 <div className="flex items-center justify-between w-full">
-                  <div className="text-sm font-medium text-[#6E59A5]">
+                  <div className="text-sm font-medium text-green-600">
                     <span className="inline-flex items-center">
                       <TrendingUp className="h-4 w-4 mr-1" />
                       238% TikTok Growth
                     </span>
                   </div>
-                  <div className="text-sm font-medium text-[#6E59A5]">
+                  <div className="text-sm font-medium text-green-600">
                     <span className="inline-flex items-center">
                       <TrendingUp className="h-4 w-4 mr-1" />
                       112% Instagram Growth
@@ -183,21 +156,14 @@ const SocialMediaManagement = () => {
 
             {/* Solstice X Bloom */}
             <Card className="overflow-hidden transition-all hover:shadow-lg">
-              <CardHeader className="bg-gradient-to-r from-[#0EA5E9] to-[#33C3F0] text-white">
+              <CardHeader className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
                 <div className="flex justify-between items-start">
                   <CardTitle>Solstice X Bloom</CardTitle>
                   <Award className="h-6 w-6" />
                 </div>
                 <CardDescription className="text-blue-100">Brand</CardDescription>
               </CardHeader>
-              <div className="p-4">
-                <img 
-                  src="/assets/images/eric.png" 
-                  alt="Solstice X Bloom"
-                  className="w-full h-40 object-cover rounded-md"
-                />
-              </div>
-              <CardContent className="pt-2">
+              <CardContent className="pt-6">
                 <div className="space-y-4">
                   <div>
                     <h3 className="text-lg font-medium flex items-center gap-2">
@@ -233,7 +199,7 @@ const SocialMediaManagement = () => {
               </CardContent>
               <CardFooter className="bg-gray-50 border-t">
                 <div className="flex items-center justify-between w-full">
-                  <div className="text-sm font-medium text-[#0EA5E9]">
+                  <div className="text-sm font-medium text-green-600">
                     <span className="inline-flex items-center">
                       <TrendingUp className="h-4 w-4 mr-1" />
                       1,125% Instagram Growth
@@ -245,23 +211,16 @@ const SocialMediaManagement = () => {
 
             {/* Graceland Ranch */}
             <Card className="overflow-hidden transition-all hover:shadow-lg">
-              <CardHeader className="bg-gradient-to-r from-[#8A898C] to-[#403E43] text-white">
+              <CardHeader className="bg-gradient-to-r from-green-600 to-green-800 text-white">
                 <div className="flex justify-between items-start">
                   <CardTitle>Graceland Ranch</CardTitle>
                   <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                     <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
                   </svg>
                 </div>
-                <CardDescription className="text-gray-100">Business</CardDescription>
+                <CardDescription className="text-green-100">Business</CardDescription>
               </CardHeader>
-              <div className="p-4">
-                <img 
-                  src="/assets/images/clayton.png" 
-                  alt="Graceland Ranch"
-                  className="w-full h-40 object-cover rounded-md"
-                />
-              </div>
-              <CardContent className="pt-2">
+              <CardContent className="pt-6">
                 <div className="space-y-4">
                   <div>
                     <h3 className="text-lg font-medium flex items-center gap-2">
@@ -302,7 +261,7 @@ const SocialMediaManagement = () => {
               </CardContent>
               <CardFooter className="bg-gray-50 border-t">
                 <div className="flex items-center justify-center w-full">
-                  <div className="text-sm font-medium text-[#403E43]">
+                  <div className="text-sm font-medium text-green-600">
                     <span className="inline-flex items-center">
                       <TrendingUp className="h-4 w-4 mr-1" />
                       From zero to 275K TikTok followers
@@ -321,35 +280,35 @@ const SocialMediaManagement = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Our Social Media Services</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Make your podcast stand out with specialized add-on services tailored to your content
+              Comprehensive solutions tailored to your specific goals and audience
             </p>
           </div>
           
           {/* Service 1 - Content Creation */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-20">
             <div className="order-2 md:order-1">
-              <div className="inline-block p-3 bg-[#E5DEFF] rounded-2xl mb-4">
-                <Share2 className="h-7 w-7 text-[#7E69AB]" />
+              <div className="inline-block p-3 bg-purple-100 rounded-2xl mb-4">
+                <Share2 className="h-7 w-7 text-purple-600" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Content Strategy & Creation</h3>
               <p className="text-gray-600 mb-4">
-                Turn your raw recordings into polished episodes, ready for your listeners with professional editing tailored specifically to your podcast.
+                Our team creates engaging, platform-optimized content that resonates with your target audience and strengthens your brand identity.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
-                  <span className="text-[#8B5CF6] mr-2">✓</span>
+                  <span className="text-green-500 mr-2">✓</span>
                   <span>Platform-specific content optimization</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#8B5CF6] mr-2">✓</span>
+                  <span className="text-green-500 mr-2">✓</span>
                   <span>Trending topic integration</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#8B5CF6] mr-2">✓</span>
+                  <span className="text-green-500 mr-2">✓</span>
                   <span>Consistent posting schedule</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#8B5CF6] mr-2">✓</span>
+                  <span className="text-green-500 mr-2">✓</span>
                   <span>Brand voice development</span>
                 </li>
               </ul>
@@ -373,28 +332,28 @@ const SocialMediaManagement = () => {
               />
             </div>
             <div>
-              <div className="inline-block p-3 bg-[#D3E4FD] rounded-2xl mb-4">
-                <MessageSquare className="h-7 w-7 text-[#0EA5E9]" />
+              <div className="inline-block p-3 bg-blue-100 rounded-2xl mb-4">
+                <MessageSquare className="h-7 w-7 text-blue-600" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Community Management</h3>
               <p className="text-gray-600 mb-4">
-                Our team helps your podcast reach more listeners by crafting engaging content, managing your social presence, and fostering genuine community interactions.
+                Build meaningful relationships with your audience through active engagement and responsive community management.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
-                  <span className="text-[#0EA5E9] mr-2">✓</span>
+                  <span className="text-green-500 mr-2">✓</span>
                   <span>Timely response to comments and messages</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#0EA5E9] mr-2">✓</span>
+                  <span className="text-green-500 mr-2">✓</span>
                   <span>Proactive audience engagement</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#0EA5E9] mr-2">✓</span>
+                  <span className="text-green-500 mr-2">✓</span>
                   <span>Community growth initiatives</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#0EA5E9] mr-2">✓</span>
+                  <span className="text-green-500 mr-2">✓</span>
                   <span>Crisis management and moderation</span>
                 </li>
               </ul>
@@ -404,28 +363,28 @@ const SocialMediaManagement = () => {
           {/* Service 3 - Analytics */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="order-2 md:order-1">
-              <div className="inline-block p-3 bg-[#F1F0FB] rounded-2xl mb-4">
-                <BarChart className="h-7 w-7 text-[#403E43]" />
+              <div className="inline-block p-3 bg-green-100 rounded-2xl mb-4">
+                <BarChart className="h-7 w-7 text-green-600" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Analytics & Growth Strategy</h3>
               <p className="text-gray-600 mb-4">
-                We manage every aspect of your social presence, from creating compelling content and scheduling posts to engaging your audience and growing your listener base across key platforms.
+                Data-driven approach to continuously refine your strategy and maximize results across all platforms.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
-                  <span className="text-[#403E43] mr-2">✓</span>
+                  <span className="text-green-500 mr-2">✓</span>
                   <span>Performance tracking and reporting</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#403E43] mr-2">✓</span>
+                  <span className="text-green-500 mr-2">✓</span>
                   <span>Audience insights and analysis</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#403E43] mr-2">✓</span>
+                  <span className="text-green-500 mr-2">✓</span>
                   <span>Competitor benchmarking</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#403E43] mr-2">✓</span>
+                  <span className="text-green-500 mr-2">✓</span>
                   <span>Strategy optimization</span>
                 </li>
               </ul>
@@ -445,13 +404,16 @@ const SocialMediaManagement = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Quick answers to the questions creators ask most about our studio services and pricing</h2>
+            <h2 className="text-3xl font-bold mb-4">How We Achieve Results</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Our proven approach combines strategy, content creation, and community engagement
+            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-              <div className="w-12 h-12 bg-[#E5DEFF] rounded-full flex items-center justify-center mb-4">
-                <span className="text-[#7E69AB] font-bold text-xl">1</span>
+              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-purple-600 font-bold text-xl">1</span>
               </div>
               <h3 className="text-lg font-medium mb-2">Platform-Specific Strategy</h3>
               <p className="text-gray-600">
@@ -460,8 +422,8 @@ const SocialMediaManagement = () => {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-              <div className="w-12 h-12 bg-[#E5DEFF] rounded-full flex items-center justify-center mb-4">
-                <span className="text-[#7E69AB] font-bold text-xl">2</span>
+              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-purple-600 font-bold text-xl">2</span>
               </div>
               <h3 className="text-lg font-medium mb-2">Engaging Content Creation</h3>
               <p className="text-gray-600">
@@ -470,8 +432,8 @@ const SocialMediaManagement = () => {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-              <div className="w-12 h-12 bg-[#E5DEFF] rounded-full flex items-center justify-center mb-4">
-                <span className="text-[#7E69AB] font-bold text-xl">3</span>
+              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-purple-600 font-bold text-xl">3</span>
               </div>
               <h3 className="text-lg font-medium mb-2">Community Building</h3>
               <p className="text-gray-600">
@@ -480,75 +442,30 @@ const SocialMediaManagement = () => {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-              <div className="w-12 h-12 bg-[#E5DEFF] rounded-full flex items-center justify-center mb-4">
-                <span className="text-[#7E69AB] font-bold text-xl">4</span>
+              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-purple-600 font-bold text-xl">4</span>
               </div>
               <h3 className="text-lg font-medium mb-2">Analytics & Optimization</h3>
               <p className="text-gray-600">
                 Continuous monitoring and adjustment of strategies based on performance data to maximize growth and engagement.
               </p>
             </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-              <h3 className="text-lg font-medium mb-2">Camera Setup</h3>
-              <p className="text-gray-600">
-                We provide high-quality cameras, professional lighting, and multiple angles to keep your audience visually engaged throughout your podcast.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-              <h2 className="text-3xl font-bold mb-6">Professional Cyc Wall</h2>
-              <p className="text-gray-600 mb-6">
-                Create professional-grade visuals effortlessly with our seamless cyc wall, ideal for:
-              </p>
-              <ul className="space-y-2 mb-8 text-gray-600">
-                <li className="flex items-start">
-                  <span className="text-[#8B5CF6] mr-2">✓</span>
-                  <span>Video podcasts and interviews</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#8B5CF6] mr-2">✓</span>
-                  <span>Product and e-commerce photography</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#8B5CF6] mr-2">✓</span>
-                  <span>Corporate and promotional videos</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#8B5CF6] mr-2">✓</span>
-                  <span>Commercials and creative shoots</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-              <h3 className="text-lg font-medium mb-2">Custom Editing Packages</h3>
-              <p className="text-gray-600">
-                Absolutely—we tailor editing services specifically to your podcast's style and vision, with flexible options for all budgets.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-              <h3 className="text-lg font-medium mb-2">Social Media Management Details</h3>
-              <p className="text-gray-600">
-                We manage every aspect of your social presence, from creating compelling content and scheduling posts to engaging your audience and growing your listener base across key platforms.
-              </p>
-            </div>
           </div>
           
           {/* CTA Section */}
           <div className="mt-16 text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to launch your podcast?</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-              Book a studio session today and let us handle the rest.
+            <h3 className="text-2xl font-bold mb-6">Ready to Grow Your Social Media Presence?</h3>
+            <p className="max-w-2xl mx-auto mb-8 text-gray-600">
+              Our team of social media experts can help you achieve these kinds of results too. Let's discuss your goals and create a custom strategy for your brand.
             </p>
-            <Button 
-              asChild
-              size="lg"
-              className="bg-[#9b87f5] hover:bg-[#7E69AB] text-white"
-            >
-              <Link to="/booking">Book Now <ArrowRight className="ml-2 h-4 w-4" /></Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg">
+                <Link to="/booking">Book a Consultation</Link>
+              </Button>
+              <Button asChild variant="outline" size="lg">
+                <Link to="/pricing">View Our Packages</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>

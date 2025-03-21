@@ -196,7 +196,7 @@ const Pricing = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            Professional podcasting solutions for creators at every level
+            Media solutions for creators at every level
           </motion.p>
         </div>
       </section>

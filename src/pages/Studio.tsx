@@ -15,13 +15,13 @@ const Studio = () => {
   const equipmentList = [
     {
       title: "Microphones",
-      description: "Capture clear, broadcast-quality vocals with our Shure SM7B microphones, the industry standard for professional recordings.",
+      description: "Shure SM7B, professional-grade microphone perfect for voice recording with excellent noise rejection.",
       imageSrc: "/lovable-uploads/microphone2.png",
       icon: <Mic className="mb-2 h-6 w-6" />
     },
     {
       title: "Rodecaster Pro 2",
-      description: "Easily record and produce your podcast with intuitive controls, built-in sound effects, and crystal-clear multitrack audio.",
+      description: "Professional audio mixer designed specifically for podcasting with built-in effects and multitrack recording.",
       imageSrc: "/lovable-uploads/compressed_rhodecaster2.png",
       icon: <Monitor className="mb-2 h-6 w-6" />
     },
@@ -54,20 +54,20 @@ const Studio = () => {
     {
       title: "Podcast Studio",
       description: "Intimate setting with professional equipment for up to 4 guests.",
-      imageSrc: "/lovable-uploads/5be7c992-e59c-4300-b660-15ef39b6631e.png",
+      imageSrc: "/lovable-uploads/studio2_cropped.png",
       price: "From $75/hour",
       buttonText: "Book Now"
     },
     {
       title: "Cyc Wall Studio",
-      description: "Ideal for capturing clean visuals, whether you're shooting e-commerce content, corporate videos, advertisements, or creative photography.",
+      description: "Perfect for e-commerce, corporate videos, ads, and photography.",
       imageSrc: "/lovable-uploads/0f7668ed-d3fe-4545-9fc4-4ec53a6a6c05.png",
       price: "From $90/hour",
       buttonText: "Book Now"
     },
     {
-      title: "RGB Lighting Studio",
-      description: "Bring your creative vision to life with dynamic RGB lighting—perfect for interviews, portraits, music videos, and artistic projects.",
+      title: "RGB Lighting Setup",
+      description: "Customizable lighting for creative projects and visual content.",
       imageSrc: "/lovable-uploads/f7aacc24-737b-458d-be95-cf9fbbb00c07.png",
       price: "From $85/hour",
       buttonText: "Book Now"
@@ -103,7 +103,7 @@ const Studio = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            Spaces designed to help you create standout podcasts, videos, photography, and more.
+            Professional environments designed for creating exceptional content
           </motion.p>
           
           <motion.div
@@ -124,12 +124,11 @@ const Studio = () => {
       </section>
 
       {/* Studio Carousel */}
-      <section className="py-16 bg-white">
+      <section className="pt-8 pb-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Studio Spaces</h2>
             <p className="text-studio-600 max-w-2xl mx-auto">
-              Explore our professionally designed studio environments for all your content creation needs.
+
             </p>
           </div>
           
