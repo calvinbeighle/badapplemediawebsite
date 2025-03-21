@@ -40,13 +40,13 @@ const Studio = () => {
     {
       title: "Headphones",
       description: "4× Sony MDR-7506, industry-standard closed-back headphones for monitoring.",
-      imageSrc: "/lovable-uploads/compressed_microphone.png",
+      imageSrc: "https://images.unsplash.com/photo-1545127398-14699f92334b?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200",
       icon: <Headphones className="mb-2 h-6 w-6" />
     },
     {
       title: "Acoustic Treatment",
       description: "Premium sound panels and bass traps for professional-grade sound isolation.",
-      imageSrc: "/lovable-uploads/compressed_microphone2.png"
+      imageSrc: "https://images.unsplash.com/photo-1585536309334-033e3e708d0c?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200"
     }
   ];
 
