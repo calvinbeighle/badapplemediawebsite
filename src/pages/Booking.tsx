@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import BookingForm from "@/components/BookingForm";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -11,9 +10,9 @@ const Booking = () => {
       <section className="relative h-[40vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=2000"
-            alt="Studio Calendar"
-            className="object-cover w-full h-full"
+            src="/lovable-uploads/studio.png"
+            alt="Studio Interior"
+            className="object-cover w-full h-full object-[center_40%]"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/30"></div>
         </div>
