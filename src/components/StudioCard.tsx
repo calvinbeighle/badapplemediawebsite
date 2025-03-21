@@ -1,4 +1,3 @@
-
 import { cn } from "@/lib/utils";
 import React, { useState } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -52,6 +51,7 @@ const StudioCard = ({
             onLoad={handleImageLoad}
             onError={handleImageError}
             loading="lazy"
+            decoding="async"
           />
         </div>
       )}

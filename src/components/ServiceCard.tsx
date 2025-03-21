@@ -62,6 +62,7 @@ const ServiceCard = ({
             onLoad={handleImageLoad}
             onError={handleImageError}
             loading="lazy"
+            decoding="async"
           />
         </div>
       )}
