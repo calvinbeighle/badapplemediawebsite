@@ -15,13 +15,13 @@ const Studio = () => {
   const equipmentList = [
     {
       title: "Microphones",
-      description: "Shure SM7B, professional-grade microphone perfect for voice recording with excellent noise rejection.",
+      description: "Capture clear, broadcast-quality vocals with our Shure SM7B microphones, the industry standard for professional recordings.",
       imageSrc: "/lovable-uploads/microphone2.png",
       icon: <Mic className="mb-2 h-6 w-6" />
     },
     {
       title: "Rodecaster Pro 2",
-      description: "Professional audio mixer designed specifically for podcasting with built-in effects and multitrack recording.",
+      description: "Easily record and produce your podcast with intuitive controls, built-in sound effects, and crystal-clear multitrack audio.",
       imageSrc: "/lovable-uploads/compressed_rhodecaster2.png",
       icon: <Monitor className="mb-2 h-6 w-6" />
     },
@@ -60,14 +60,14 @@ const Studio = () => {
     },
     {
       title: "Cyc Wall Studio",
-      description: "Perfect for e-commerce, corporate videos, ads, and photography.",
+      description: "Ideal for capturing clean visuals, whether you're shooting e-commerce content, corporate videos, advertisements, or creative photography.",
       imageSrc: "/lovable-uploads/0f7668ed-d3fe-4545-9fc4-4ec53a6a6c05.png",
       price: "From $90/hour",
       buttonText: "Book Now"
     },
     {
-      title: "RGB Lighting Setup",
-      description: "Customizable lighting for creative projects and visual content.",
+      title: "RGB Lighting Studio",
+      description: "Bring your creative vision to life with dynamic RGB lighting—perfect for interviews, portraits, music videos, and artistic projects.",
       imageSrc: "/lovable-uploads/f7aacc24-737b-458d-be95-cf9fbbb00c07.png",
       price: "From $85/hour",
       buttonText: "Book Now"
@@ -75,7 +75,7 @@ const Studio = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 bg-black">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
@@ -103,7 +103,7 @@ const Studio = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            Professional environments designed for creating exceptional content, from podcasts to visual media.
+            Spaces designed to help you create standout podcasts, videos, photography, and more.
           </motion.p>
           
           <motion.div

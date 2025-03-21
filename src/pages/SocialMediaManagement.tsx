@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, TrendingUp, Instagram, Award, BarChart, Share2, MessageSquare } from "lucide-react";
@@ -6,8 +5,27 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Button } from "@/components/ui/button";
 
 const SocialMediaManagement = () => {
+  const packages = [
+    {
+      title: "Basic",
+      description: "Ideal for solo creators or those new to podcasting who need a simple, professional setup.",
+      price: "From $75/hour"
+    },
+    {
+      title: "Standard",
+      description: "Great for established podcasts looking to elevate their production quality with extra support and enhanced visuals.",
+      price: "From $125/hour",
+      popular: true
+    },
+    {
+      title: "Premium",
+      description: "A fully-equipped solution designed for creators who want top-tier production quality and hands-on technical expertise.",
+      price: "From $200/hour"
+    }
+  ];
+
   return (
-    <div className="pt-20">
+    <div className="pt-20 bg-black">
       {/* Hero Section */}
       <section className="relative h-[40vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
@@ -35,7 +53,7 @@ const SocialMediaManagement = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            Strategic growth and engagement for creators and brands
+            Podcast studios designed for creators—whether you're just starting out or leveling up
           </motion.p>
         </div>
       </section>
@@ -281,7 +299,7 @@ const SocialMediaManagement = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Our Social Media Services</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Comprehensive solutions tailored to your specific goals and audience
+              Make your podcast stand out with specialized add-on services tailored to your content
             </p>
           </div>
           
@@ -293,7 +311,7 @@ const SocialMediaManagement = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Content Strategy & Creation</h3>
               <p className="text-gray-600 mb-4">
-                Our team creates engaging, platform-optimized content that resonates with your target audience and strengthens your brand identity.
+                Turn your raw recordings into polished episodes, ready for your listeners with professional editing tailored specifically to your podcast.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
@@ -338,7 +356,7 @@ const SocialMediaManagement = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Community Management</h3>
               <p className="text-gray-600 mb-4">
-                Build meaningful relationships with your audience through active engagement and responsive community management.
+                Our team helps your podcast reach more listeners by crafting engaging content, managing your social presence, and fostering genuine community interactions.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
@@ -369,7 +387,7 @@ const SocialMediaManagement = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Analytics & Growth Strategy</h3>
               <p className="text-gray-600 mb-4">
-                Data-driven approach to continuously refine your strategy and maximize results across all platforms.
+                We manage every aspect of your social presence, from creating compelling content and scheduling posts to engaging your audience and growing your listener base across key platforms.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
@@ -405,10 +423,7 @@ const SocialMediaManagement = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">How We Achieve Results</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Our proven approach combines strategy, content creation, and community engagement
-            </p>
+            <h2 className="text-3xl font-bold mb-4">Quick answers to the questions creators ask most about our studio services and pricing</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -451,22 +466,67 @@ const SocialMediaManagement = () => {
                 Continuous monitoring and adjustment of strategies based on performance data to maximize growth and engagement.
               </p>
             </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+              <h3 className="text-lg font-medium mb-2">Camera Setup</h3>
+              <p className="text-gray-600">
+                We provide high-quality cameras, professional lighting, and multiple angles to keep your audience visually engaged throughout your podcast.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+              <h2 className="text-3xl font-bold mb-6">Professional Cyc Wall</h2>
+              <p className="text-gray-600 mb-6">
+                Create professional-grade visuals effortlessly with our seamless cyc wall, ideal for:
+              </p>
+              <ul className="space-y-2 mb-8 text-gray-600">
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span>Video podcasts and interviews</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span>Product and e-commerce photography</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span>Corporate and promotional videos</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 mr-2">✓</span>
+                  <span>Commercials and creative shoots</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+              <h3 className="text-lg font-medium mb-2">Custom Editing Packages</h3>
+              <p className="text-gray-600">
+                Absolutely—we tailor editing services specifically to your podcast's style and vision, with flexible options for all budgets.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+              <h3 className="text-lg font-medium mb-2">Social Media Management Details</h3>
+              <p className="text-gray-600">
+                We manage every aspect of your social presence, from creating compelling content and scheduling posts to engaging your audience and growing your listener base across key platforms.
+              </p>
+            </div>
           </div>
           
           {/* CTA Section */}
           <div className="mt-16 text-center">
-            <h3 className="text-2xl font-bold mb-6">Ready to Grow Your Social Media Presence?</h3>
-            <p className="max-w-2xl mx-auto mb-8 text-gray-600">
-              Our team of social media experts can help you achieve these kinds of results too. Let's discuss your goals and create a custom strategy for your brand.
+            <h2 className="text-3xl font-bold mb-6">Ready to launch your podcast?</h2>
+            <p className="text-white/80 max-w-2xl mx-auto mb-8">
+              Book a studio session today and let us handle the rest.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg">
-                <Link to="/booking">Book a Consultation</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link to="/pricing">View Our Packages</Link>
-              </Button>
-            </div>
+            <Button 
+              asChild
+              variant="outline" 
+              className="border-white text-white hover:bg-white hover:text-studio-900"
+            >
+              <Link to="/booking">Book Now</Link>
+            </Button>
           </div>
         </div>
       </section>

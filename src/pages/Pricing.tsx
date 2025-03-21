@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import PricingCard from "@/components/PricingCard";
 import ServiceCard from "@/components/ServiceCard";
@@ -169,7 +168,7 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 bg-black">
       {/* Hero Section */}
       <section className="relative h-[40vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
