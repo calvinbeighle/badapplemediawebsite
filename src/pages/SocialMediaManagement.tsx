@@ -66,7 +66,8 @@ const SocialMediaManagement = () => {
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold mb-4">Our Client Success Stories</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Real results that demonstrate our proven approach to social media growth and management
+              We've helped creators and businesses of all sizes grow their social media presence
+              and achieve remarkable results across different platforms.
             </p>
           </div>
 
@@ -74,12 +75,12 @@ const SocialMediaManagement = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Chris Howard */}
             <Card className="overflow-hidden transition-all hover:shadow-lg">
-              <CardHeader className="bg-gradient-to-r from-purple-600 to-purple-800 text-white">
+              <CardHeader className="bg-gradient-to-r from-purple-800/90 to-purple-900 text-white">
                 <div className="flex justify-between items-start">
                   <CardTitle>Chris Howard</CardTitle>
                   <TrendingUp className="h-6 w-6" />
                 </div>
-                <CardDescription className="text-purple-100">Content Creator</CardDescription>
+                <CardDescription className="text-purple-200">Content Creator</CardDescription>
               </CardHeader>
               <CardContent className="pt-6">
                 <div className="space-y-4">
@@ -156,12 +157,12 @@ const SocialMediaManagement = () => {
 
             {/* Solstice X Bloom */}
             <Card className="overflow-hidden transition-all hover:shadow-lg">
-              <CardHeader className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+              <CardHeader className="bg-gradient-to-r from-studio-700 to-studio-800 text-white">
                 <div className="flex justify-between items-start">
                   <CardTitle>Solstice X Bloom</CardTitle>
                   <Award className="h-6 w-6" />
                 </div>
-                <CardDescription className="text-blue-100">Brand</CardDescription>
+                <CardDescription className="text-studio-300">Brand</CardDescription>
               </CardHeader>
               <CardContent className="pt-6">
                 <div className="space-y-4">
@@ -211,14 +212,14 @@ const SocialMediaManagement = () => {
 
             {/* Graceland Ranch */}
             <Card className="overflow-hidden transition-all hover:shadow-lg">
-              <CardHeader className="bg-gradient-to-r from-green-600 to-green-800 text-white">
+              <CardHeader className="bg-gradient-to-r from-purple-900/90 to-purple-950 text-white">
                 <div className="flex justify-between items-start">
                   <CardTitle>Graceland Ranch</CardTitle>
                   <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                     <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
                   </svg>
                 </div>
-                <CardDescription className="text-green-100">Business</CardDescription>
+                <CardDescription className="text-purple-300">Business</CardDescription>
               </CardHeader>
               <CardContent className="pt-6">
                 <div className="space-y-4">
