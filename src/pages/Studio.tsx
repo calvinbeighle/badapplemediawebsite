@@ -189,13 +189,11 @@ const Studio = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-              <div className="absolute inset-0">
-                <img
-                  src="/lovable-uploads/0f7668ed-d3fe-4545-9fc4-4ec53a6a6c05.png"
-                  alt="Cyc Wall Studio"
-                  className="w-full h-full object-cover object-[center_70%]"
-                />
-              </div>
+              <img
+                src="/lovable-uploads/0f7668ed-d3fe-4545-9fc4-4ec53a6a6c05.png"
+                alt="Cyc Wall Studio"
+                className="absolute inset-0 w-full h-[150%] object-cover object-[center_25%]"
+              />
             </div>
             
             <div>
