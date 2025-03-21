@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Mic, Camera, Monitor, PlaySquare, Headphones } from "lucide-react";
 import StudioCard from "@/components/StudioCard";
@@ -17,7 +16,7 @@ const Studio = () => {
     {
       title: "Microphones",
       description: "Shure SM7B, professional-grade microphone perfect for voice recording with excellent noise rejection.",
-      imageSrc: "/lovable-uploads/compressed_microphone2.png",
+      imageSrc: "/lovable-uploads/microphone2.png",
       icon: <Mic className="mb-2 h-6 w-6" />
     },
     {
