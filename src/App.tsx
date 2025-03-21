@@ -9,7 +9,7 @@ import Index from "./pages/Index";
 import Studio from "./pages/Studio";
 import Pricing from "./pages/Pricing";
 import Booking from "./pages/Booking";
-import CaseStudies from "./pages/CaseStudies";
+import SocialMediaManagement from "./pages/SocialMediaManagement";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,7 +26,7 @@ const App = () => (
             <Route path="studio" element={<Studio />} />
             <Route path="pricing" element={<Pricing />} />
             <Route path="booking" element={<Booking />} />
-            <Route path="case-studies" element={<CaseStudies />} />
+            <Route path="social-media" element={<SocialMediaManagement />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
