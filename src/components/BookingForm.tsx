@@ -1,10 +1,10 @@
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { format } from "date-fns";
 import { CalendarIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button as ShadcnButton } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
+import emailjs from '@emailjs/browser';
 import {
   Popover,
   PopoverContent,
@@ -23,6 +23,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/components/ui/use-toast";
 import Button from "./Button";
 
+// Initialize Email.js
+emailjs.init("Z0tlvoRfCfi4ALahy");
+
 const BookingForm = () => {
   const [date, setDate] = useState<Date>();
   const [timeSlot, setTimeSlot] = useState("");
@@ -33,18 +36,34 @@ const BookingForm = () => {
   const [notes, setNotes] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    const formData = {
+      to_name: "Studio Team",
+      from_name: name,
+      from_email: email,
+      phone: phone,
+      booking_date: date ? format(date, "PPP") : "",
+      time_slot: timeSlot,
+      duration: duration,
+      notes: notes,
+      to_email: "jordan@badapplemediala.com, peter@badapplemediala.com"
+    };
+
+    try {
+      await emailjs.send(
+        'service_focitur',
+        'template_0jv4igq',
+        formData
+      );
+
       toast({
         title: "Booking Request Submitted",
         description: "We'll contact you shortly to confirm your reservation.",
       });
-      setIsSubmitting(false);
-      
+
       // Reset form
       setDate(undefined);
       setTimeSlot("");
@@ -53,7 +72,16 @@ const BookingForm = () => {
       setEmail("");
       setPhone("");
       setNotes("");
-    }, 1500);
+    } catch (error) {
+      console.error('Email error:', error);
+      toast({
+        title: "Error",
+        description: "There was an error submitting your booking request. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
