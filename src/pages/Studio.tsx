@@ -16,25 +16,25 @@ const Studio = () => {
     {
       title: "Microphones",
       description: "Shure SM7B, professional-grade microphone perfect for voice recording with excellent noise rejection.",
-      imageSrc: "/lovable-uploads/microphone2.png",
+      imageSrc: "/lovable-uploads/compressed_optimized_microphone2.png",
       icon: <Mic className="mb-2 h-6 w-6" />
     },
     {
       title: "Rodecaster Pro 2",
       description: "Professional audio mixer designed specifically for podcasting with built-in effects and multitrack recording.",
-      imageSrc: "/lovable-uploads/compressed_rhodecaster2.png",
+      imageSrc: "/lovable-uploads/compressed_optimized_compressed_rhodecaster2.png",
       icon: <Monitor className="mb-2 h-6 w-6" />
     },
     {
       title: "Sony FX30 Cameras",
       description: "2× Sony FX30 professional cinema cameras featuring Super 35mm sensors for stunning 4K video.",
-      imageSrc: "/lovable-uploads/compressed_sonyalpha7s.png",
+      imageSrc: "/lovable-uploads/compressed_optimized_compressed_sonyalpha7s.png",
       icon: <Camera className="mb-2 h-6 w-6" />
     },
     {
       title: "Sony A7SIII",
       description: "Full-frame mirrorless camera with exceptional low-light performance and advanced video capabilities.",
-      imageSrc: "/lovable-uploads/compressed_sonylong.png",
+      imageSrc: "/lovable-uploads/compressed_optimized_compressed_sonylong.png",
       icon: <Camera className="mb-2 h-6 w-6" />
     },
     {
@@ -54,21 +54,21 @@ const Studio = () => {
     {
       title: "Podcast Studio",
       description: "Intimate setting with professional equipment for up to 4 guests.",
-      imageSrc: "/lovable-uploads/studio2_cropped.png",
+      imageSrc: "/lovable-uploads/compressed_optimized_studio2_cropped.png",
       price: "From $75/hour",
       buttonText: "Book Now"
     },
     {
       title: "Cyc Wall Studio",
       description: "Perfect for e-commerce, corporate videos, ads, and photography.",
-      imageSrc: "/lovable-uploads/0f7668ed-d3fe-4545-9fc4-4ec53a6a6c05.png",
+      imageSrc: "/lovable-uploads/compressed_optimized_0f7668ed-d3fe-4545-9fc4-4ec53a6a6c05.png",
       price: "From $90/hour",
       buttonText: "Book Now"
     },
     {
       title: "RGB Lighting Setup",
       description: "Customizable lighting for creative projects and visual content.",
-      imageSrc: "/lovable-uploads/f7aacc24-737b-458d-be95-cf9fbbb00c07.png",
+      imageSrc: "/lovable-uploads/compressed_optimized_f7aacc24-737b-458d-be95-cf9fbbb00c07.png",
       price: "From $85/hour",
       buttonText: "Book Now"
     }
@@ -80,7 +80,7 @@ const Studio = () => {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/lovable-uploads/5be7c992-e59c-4300-b660-15ef39b6631e.png"
+            src="/lovable-uploads/compressed_optimized_5be7c992-e59c-4300-b660-15ef39b6631e.png"
             alt="Recording Studio"
             className="object-cover w-full h-full"
           />
