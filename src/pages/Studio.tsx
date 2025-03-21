@@ -22,7 +22,7 @@ const Studio = () => {
     {
       title: "Rodecaster Pro 2",
       description: "Professional audio mixer designed specifically for podcasting with built-in effects and multitrack recording.",
-      imageSrc: "https://images.unsplash.com/photo-1558392204-ac78741f4abf?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200",
+      imageSrc: "/lovable-uploads/compressed_rhodecaster2.png",
       icon: <Monitor className="mb-2 h-6 w-6" />
     },
     {
