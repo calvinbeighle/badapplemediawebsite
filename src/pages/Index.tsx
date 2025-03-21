@@ -9,9 +9,11 @@ const Index = () => {
       <section className="relative h-screen flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/a8781a26-a759-4c3d-aa2f-099b67789fe3.png"
+            src="/images/web_optimized_v2_compressed_sonyalpha.png"
             alt="Producer working in studio with laptop and equipment"
             className="object-cover w-full h-full"
+            fetchPriority="high"
+            loading="eager"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/30"></div>
         </div>
