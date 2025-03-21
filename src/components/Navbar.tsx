@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -8,7 +7,7 @@ import Logo from "./Logo";
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "Studio", path: "/studio" },
-  { name: "Case Studies", path: "/case-studies" },
+  { name: "Social Media", path: "/social-media" },
   { name: "Pricing", path: "/pricing" },
   { name: "Book Now", path: "/booking" },
 ];
