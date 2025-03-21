@@ -56,7 +56,8 @@ const ServiceCard = ({
               "absolute inset-0 w-full h-[150%] object-cover transition-all duration-500",
               imageLoaded ? "opacity-100" : "opacity-0",
               "hover:scale-105",
-              title === "Cyc Wall Studio" ? "object-[center_35%]" : "object-center"
+              title === "Cyc Wall Studio" ? "object-[center_35%]" : 
+              title === "RGB Lighting Setup" ? "object-[center_25%]" : "object-center"
             )}
             onLoad={handleImageLoad}
             onError={handleImageError}
