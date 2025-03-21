@@ -193,7 +193,7 @@ const Studio = () => {
                 <img
                   src="/lovable-uploads/0f7668ed-d3fe-4545-9fc4-4ec53a6a6c05.png"
                   alt="Cyc Wall Studio"
-                  className="absolute top-[20%] left-0 w-full h-full object-cover"
+                  className="w-full h-full object-cover object-[center_70%]"
                 />
               </div>
             </div>
