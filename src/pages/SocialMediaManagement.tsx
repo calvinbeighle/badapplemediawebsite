@@ -11,7 +11,7 @@ const SocialMediaManagement = () => {
       <section className="relative h-[40vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/web_optimized_v2_compressed_microphone.png"
+            src="/lovable-uploads/web_optimized_v2_compressed_microphone.png"
             alt="Social Media Success"
             className="object-cover w-full h-full brightness-50"
             fetchPriority="high"
@@ -58,7 +58,7 @@ const SocialMediaManagement = () => {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/images/web_optimized_v2_studio.png" 
+                src="/lovable-uploads/web_optimized_v2_studio.png" 
                 alt="Social Media Studio"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
@@ -319,7 +319,7 @@ const SocialMediaManagement = () => {
             </div>
             <div className="relative h-72 md:h-96 rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <img 
-                src="/images/web_optimized_v2_compressed_sonyalpha.png" 
+                src="/lovable-uploads/web_optimized_v2_compressed_sonyalpha.png" 
                 alt="Content Creation"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
@@ -331,7 +331,7 @@ const SocialMediaManagement = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-20">
             <div className="relative h-72 md:h-96 rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/images/web_optimized_v2_compressed_rhodecaster2.png" 
+                src="/lovable-uploads/web_optimized_v2_compressed_rhodecaster2.png" 
                 alt="Community Management"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
@@ -397,7 +397,7 @@ const SocialMediaManagement = () => {
             </div>
             <div className="relative h-72 md:h-96 rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <img 
-                src="/images/web_optimized_v2_compressed_sonylong.png" 
+                src="/lovable-uploads/web_optimized_v2_compressed_sonylong.png" 
                 alt="Analytics and Strategy"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
