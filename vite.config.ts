@@ -22,23 +22,7 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     outDir: "dist",
-    assetsDir: "assets",
-    copyPublicDir: true,
     emptyOutDir: true,
-    rollupOptions: {
-      output: {
-        assetFileNames: ({ name }) => {
-          if (!name) return 'assets/[name].[hash][extname]';
-          
-          // Keep the original path for files in lovable-uploads
-          if (name.includes('lovable-uploads/')) {
-            return name;
-          }
-          
-          // Process other assets normally
-          return 'assets/[name].[hash][extname]';
-        }
-      }
-    }
+    copyPublicDir: true
   }
 }));
