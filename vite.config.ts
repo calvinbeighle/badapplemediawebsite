@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/",
+  base: "",
   server: {
     host: "::",
     port: 8080,
@@ -21,8 +21,10 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
+    outDir: "dist",
     assetsDir: "assets",
     copyPublicDir: true,
+    emptyOutDir: true,
     rollupOptions: {
       output: {
         assetFileNames: (assetInfo: { name?: string }) => {

@@ -5,28 +5,20 @@
   "public": true,
   "cleanUrls": true,
   "trailingSlash": false,
-  "headers": [
+  "routes": [
     {
-      "source": "/assets/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
+      "src": "/lovable-uploads/(.*)",
+      "dest": "/lovable-uploads/$1",
+      "continue": true
     },
     {
-      "source": "/lovable-uploads/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
+      "src": "/(.*)\\.(.+)$",
+      "dest": "/$1.$2",
+      "continue": true
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
-  ],
-  "rewrites": [
-    { "source": "/lovable-uploads/(.*)", "destination": "/lovable-uploads/$1" },
-    { "source": "/(.*)", "destination": "/index.html" }
   ]
 } 
