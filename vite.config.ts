@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "",
+  base: "/",
   server: {
     host: "::",
     port: 8080,
@@ -27,14 +27,18 @@ export default defineConfig(({ mode }) => ({
     emptyOutDir: true,
     rollupOptions: {
       output: {
-        assetFileNames: (assetInfo: { name?: string }) => {
-          const name = assetInfo.name || '';
-          if (name.endsWith('.png') || name.endsWith('.jpg') || name.endsWith('.svg')) {
-            return `[name].[hash][extname]`;
+        assetFileNames: ({ name }) => {
+          if (!name) return 'assets/[name].[hash][extname]';
+          
+          // Keep the original path for files in lovable-uploads
+          if (name.includes('lovable-uploads/')) {
+            return name;
           }
-          return `assets/[name].[hash][extname]`;
-        },
-      },
-    },
-  },
+          
+          // Process other assets normally
+          return 'assets/[name].[hash][extname]';
+        }
+      }
+    }
+  }
 }));
