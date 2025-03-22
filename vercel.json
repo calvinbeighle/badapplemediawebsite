@@ -4,11 +4,7 @@
   "outputDirectory": "dist",
   "rewrites": [
     { 
-      "source": "/lovable-uploads/:path*",
-      "destination": "/lovable-uploads/:path*"
-    },
-    { 
-      "source": "/(.*)",
+      "source": "/((?!lovable-uploads/).*)",
       "destination": "/index.html"
     }
   ]
