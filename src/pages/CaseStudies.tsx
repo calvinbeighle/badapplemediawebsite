@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, TrendingUp, Instagram, Award } from "lucide-react";
@@ -12,9 +11,9 @@ const CaseStudies = () => {
       <section className="relative h-[40vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/lovable-uploads/compressed_microphone.png"
-            alt="Social Media Success"
-            className="object-cover w-full h-full brightness-50"
+            src="/compressed_microphone.png"
+            alt="Studio Equipment"
+            className="object-cover w-full h-full"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50"></div>
         </div>

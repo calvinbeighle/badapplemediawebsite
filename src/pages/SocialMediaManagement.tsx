@@ -11,7 +11,7 @@ const SocialMediaManagement = () => {
       <section className="relative h-[40vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/lovable-uploads/web_optimized_v2_compressed_microphone.png"
+            src="/web_optimized_v2_compressed_microphone.png"
             alt="Social Media Success"
             className="object-cover w-full h-full brightness-50"
             fetchPriority="high"
@@ -58,7 +58,7 @@ const SocialMediaManagement = () => {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/lovable-uploads/web_optimized_v2_studio.png" 
+                src="/web_optimized_v2_studio.png" 
                 alt="Social Media Studio"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
@@ -319,8 +319,8 @@ const SocialMediaManagement = () => {
             </div>
             <div className="relative h-72 md:h-96 rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <img 
-                src="/lovable-uploads/web_optimized_v2_compressed_sonyalpha.png" 
-                alt="Content Creation"
+                src="/web_optimized_v2_compressed_sonyalpha.png" 
+                alt="Sony Alpha Camera"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
               />
@@ -331,8 +331,8 @@ const SocialMediaManagement = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-20">
             <div className="relative h-72 md:h-96 rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/lovable-uploads/web_optimized_v2_compressed_rhodecaster2.png" 
-                alt="Community Management"
+                src="/web_optimized_v2_compressed_rhodecaster2.png" 
+                alt="RodeCaster Pro 2"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
               />
@@ -397,8 +397,8 @@ const SocialMediaManagement = () => {
             </div>
             <div className="relative h-72 md:h-96 rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <img 
-                src="/lovable-uploads/web_optimized_v2_compressed_sonylong.png" 
-                alt="Analytics and Strategy"
+                src="/web_optimized_v2_compressed_sonylong.png" 
+                alt="Sony Long Lens"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
               />

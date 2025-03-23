@@ -61,14 +61,14 @@ const Studio = () => {
     {
       title: "Cyc Wall Studio",
       description: "Perfect for e-commerce, corporate videos, ads, and photography.",
-      imageSrc: "/lovable-uploads/web_0f7668ed-d3fe-4545-9fc4-4ec53a6a6c05.png",
+      imageSrc: "/web_0f7668ed-d3fe-4545-9fc4-4ec53a6a6c05.png",
       price: "From $90/hour",
       buttonText: "Book Now"
     },
     {
       title: "RGB Lighting Setup",
       description: "Customizable lighting for creative projects and visual content.",
-      imageSrc: "/lovable-uploads/web_f7aacc24-737b-458d-be95-cf9fbbb00c07.png",
+      imageSrc: "/web_f7aacc24-737b-458d-be95-cf9fbbb00c07.png",
       price: "From $85/hour",
       buttonText: "Book Now"
     }
@@ -80,7 +80,7 @@ const Studio = () => {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/lovable-uploads/web_5be7c992-e59c-4300-b660-15ef39b6631e.png"
+            src="/web_5be7c992-e59c-4300-b660-15ef39b6631e.png"
             alt="Recording Studio"
             className="object-cover w-full h-full"
             loading="eager"
@@ -176,7 +176,7 @@ const Studio = () => {
             
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <img
-                src="/lovable-uploads/web_5be7c992-e59c-4300-b660-15ef39b6631e.png"
+                src="/web_5be7c992-e59c-4300-b660-15ef39b6631e.png"
                 alt="Studio Interior"
                 className="object-cover w-full h-full"
                 loading="lazy"
@@ -192,7 +192,7 @@ const Studio = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <img
-                src="/lovable-uploads/web_0f7668ed-d3fe-4545-9fc4-4ec53a6a6c05.png"
+                src="/web_0f7668ed-d3fe-4545-9fc4-4ec53a6a6c05.png"
                 alt="Cyc Wall Studio"
                 className="absolute inset-0 w-full h-[150%] object-cover object-[center_25%]"
                 loading="lazy"
@@ -230,7 +230,7 @@ const Studio = () => {
             
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <img
-                src="/lovable-uploads/web_f7aacc24-737b-458d-be95-cf9fbbb00c07.png"
+                src="/web_f7aacc24-737b-458d-be95-cf9fbbb00c07.png"
                 alt="RGB Lighting Setup"
                 className="object-cover w-full h-full"
                 loading="lazy"
