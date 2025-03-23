@@ -9,7 +9,7 @@ const Index = () => {
       <section className="relative h-screen flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/web_optimized_a8781a26-a759-4c3d-aa2f-099b67789fe3.png"
+            src="/web_studio2_cropped.png"
             alt="Studio Interior"
             className="object-cover w-full h-full"
             loading="eager"
