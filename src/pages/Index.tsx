@@ -6,12 +6,13 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center">
-        <div className="absolute inset-0 z-0">
+      <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0 w-full h-full">
           <img
-            src="/web_studio2_cropped.png"
+            src="/web_optimized_v2_studio.png"
             alt="Studio Interior"
             className="object-cover w-full h-full"
+            style={{ maxWidth: '100%', maxHeight: '100%' }}
             loading="eager"
             fetchPriority="high"
           />
