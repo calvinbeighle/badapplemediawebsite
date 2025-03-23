@@ -12,7 +12,7 @@ const CaseStudies = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/compressed_microphone.png"
-            alt="Studio Equipment"
+            alt="Social Media Success"
             className="object-cover w-full h-full"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50"></div>

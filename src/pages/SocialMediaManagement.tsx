@@ -320,7 +320,7 @@ const SocialMediaManagement = () => {
             <div className="relative h-72 md:h-96 rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <img 
                 src="/web_optimized_v2_compressed_sonyalpha.png" 
-                alt="Sony Alpha Camera"
+                alt="Content Creation"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
               />
@@ -332,7 +332,7 @@ const SocialMediaManagement = () => {
             <div className="relative h-72 md:h-96 rounded-lg overflow-hidden shadow-xl">
               <img 
                 src="/web_optimized_v2_compressed_rhodecaster2.png" 
-                alt="RodeCaster Pro 2"
+                alt="Community Management"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
               />
@@ -398,7 +398,7 @@ const SocialMediaManagement = () => {
             <div className="relative h-72 md:h-96 rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <img 
                 src="/web_optimized_v2_compressed_sonylong.png" 
-                alt="Sony Long Lens"
+                alt="Analytics and Reporting"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"
               />

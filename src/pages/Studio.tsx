@@ -16,25 +16,25 @@ const Studio = () => {
     {
       title: "Microphones",
       description: "Shure SM7B, professional-grade microphone perfect for voice recording with excellent noise rejection.",
-      imageSrc: "/lovable-uploads/web_microphone2.png",
+      imageSrc: "/web_microphone2.png",
       icon: <Mic className="mb-2 h-6 w-6" />
     },
     {
       title: "Rodecaster Pro 2",
       description: "Professional audio mixer designed specifically for podcasting with built-in effects and multitrack recording.",
-      imageSrc: "/lovable-uploads/web_compressed_rhodecaster2.png",
+      imageSrc: "/web_compressed_rhodecaster2.png",
       icon: <Monitor className="mb-2 h-6 w-6" />
     },
     {
       title: "Sony FX30 Cameras",
       description: "Sony FX30 professional cinema cameras featuring Super 35mm sensors for stunning 4K video.",
-      imageSrc: "/lovable-uploads/web_compressed_sonyalpha7s.png",
+      imageSrc: "/web_compressed_sonyalpha7s.png",
       icon: <Camera className="mb-2 h-6 w-6" />
     },
     {
       title: "Sony A7SIII",
       description: "Full-frame mirrorless camera with exceptional low-light performance and advanced video capabilities.",
-      imageSrc: "/lovable-uploads/web_compressed_sonylong.png",
+      imageSrc: "/web_compressed_sonylong.png",
       icon: <Camera className="mb-2 h-6 w-6" />
     },
     {
@@ -46,7 +46,7 @@ const Studio = () => {
     {
       title: "Acoustic Treatment",
       description: "Premium sound panels and bass traps for professional-grade sound isolation.",
-      imageSrc: "/lovable-uploads/web_audio.png"
+      imageSrc: "/web_audio.png"
     }
   ];
 
@@ -54,7 +54,7 @@ const Studio = () => {
     {
       title: "Podcast Studio",
       description: "Intimate setting with professional equipment for up to 4 guests.",
-      imageSrc: "/lovable-uploads/web_studio2_cropped.png",
+      imageSrc: "/web_studio2_cropped.png",
       price: "From $75/hour",
       buttonText: "Book Now"
     },
@@ -232,7 +232,7 @@ const Studio = () => {
               <img
                 src="/web_f7aacc24-737b-458d-be95-cf9fbbb00c07.png"
                 alt="RGB Lighting Setup"
-                className="object-cover w-full h-full"
+                className="absolute inset-0 w-full h-[150%] object-cover object-[center_35%]"
                 loading="lazy"
               />
             </div>
