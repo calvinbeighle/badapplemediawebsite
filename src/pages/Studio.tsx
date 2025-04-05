@@ -193,7 +193,6 @@ const Studio = () => {
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <video 
                 src="/static/images/CYCWall.mov"
-                alt="Cyc Wall Studio"
                 className="absolute inset-0 w-full h-[150%] object-cover object-[center_25%]"
                 loading="lazy"
                 autoPlay

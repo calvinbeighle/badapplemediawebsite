@@ -1,4 +1,4 @@
-import { ArrowRight, Mic, Users, Clock } from "lucide-react";
+import { Mic, Users, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
 
@@ -48,10 +48,6 @@ const Index = () => {
               Explore Our Space
             </Button>
           </motion.div>
-        </div>
-        
-        <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">
-          <ArrowRight size={28} className="text-white" />
         </div>
       </section>
 
