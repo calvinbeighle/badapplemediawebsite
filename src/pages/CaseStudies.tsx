@@ -11,9 +11,9 @@ const CaseStudies = () => {
       <section className="relative h-[40vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/compressed_microphone.png"
+            src="/static/images/compressed_microphone.png"
             alt="Social Media Success"
-            className="object-cover w-full h-full"
+            className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50"></div>
         </div>

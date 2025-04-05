@@ -80,7 +80,7 @@ const Studio = () => {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/peopleinstudio1.png"
+            src="/static/images/peopleinstudio1.png"
             alt="Recording Studio"
             className="object-cover w-full h-full"
             loading="eager"
@@ -176,7 +176,7 @@ const Studio = () => {
             
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <img
-                src="web_optimized_studio.png"
+                src="/static/images/web_optimized_studio.png"
                 alt="Studio Interior"
                 className="object-cover w-full h-full"
                 loading="lazy"
@@ -230,7 +230,7 @@ const Studio = () => {
             
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <img
-                src="/rgblight.png"
+                src="/static/images/rgblight.png"
                 alt="RGB Lighting Setup"
                 className="absolute inset-0 w-full h-[150%] object-cover object-[center_35%]"
                 loading="lazy"
