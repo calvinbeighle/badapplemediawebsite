@@ -17,10 +17,11 @@ const Pricing = () => {
 
   const serviceFeatures = [
     { 
-      name: "Number of guests", 
+      name: "Guests", 
       basic: true, 
       standard: true, 
-      premium: true 
+      premium: true,
+      header: true // add a property to clearly indicate headers
     },
     { 
       name: "Up to 2 guests", 
@@ -32,7 +33,7 @@ const Pricing = () => {
       name: "Up to 4 guests", 
       basic: false, 
       standard: true, 
-      premium: false 
+      premium: true  // Premium should also support up to 4 guests (implicitly)
     },
     { 
       name: "Up to 6 guests", 
@@ -41,10 +42,11 @@ const Pricing = () => {
       premium: true 
     },
     { 
-      name: "Camera angles", 
+      name: "Camera Angles", 
       basic: true, 
       standard: true, 
-      premium: true 
+      premium: true,
+      header: true
     },
     { 
       name: "1 camera angle", 
@@ -92,38 +94,39 @@ const Pricing = () => {
       features: [
         "Up to 2 people",
         "1 camera angle",
-        "Self-operated recording",
-        "Raw audio files provided",
-        "Online booking system"
+        "Audio engineer provided",
+        "Raw video and audio files provided",
+        
       ],
       popular: false
     },
     {
       title: "Standard",
-      price: "$125",
+      price: "$200",
       description: "Our most popular option for established podcasts.",
       features: [
         "Up to 4 people",
-        "2 camera angles",
-        "Basic technical assistance",
-        "Raw audio files + basic edit",
-        "Priority booking",
-        "Cyc wall background"
+        "3 camera angles",
+        "Sound engineer provided",
+        "Video provided",
+        "1 longform video",
+        "1 social clip"
       ],
       popular: true
     },
     {
       title: "Premium",
-      price: "$200",
+      price: "$300",
       description: "Complete solution for professional productions.",
       features: [
-        "Up to 6 people",
+        "Up to 4 people",
         "3 camera angles",
         "Dedicated sound engineer",
-        "Full post-production services",
-        "Distribution assistance",
+        "Video provided",
+        "1 longform video",
+        "6 social clips",
         "Cyc wall background",
-        "2 hours of editing included"
+        "Full post-production services"
       ],
       popular: false
     }
@@ -237,51 +240,41 @@ const Pricing = () => {
               </div>
             </TabsContent>
             <TabsContent value="packages" className="mt-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto max-w-4xl">
                 <PricingCard
-                  title="4-Hour Block"
-                  price="$250"
-                  description="Save 15% with our half-day package."
+                  title="Half Season"
+                  price="$800"
+                  description="Perfect for testing the waters with your podcast."
                   features={[
-                    "4 continuous hours of studio time",
-                    "Up to 4 people",
-                    "2 camera angles",
-                    "Technical assistance",
-                    "Cyc wall access"
+                    "5 episodes (1.5 hours each)",
+                    "Single day recording session",
+                    "Professional audio engineer",
+                    "3 camera angles",
+                    "Raw video and audio files",
+                    "One fully edited longform episode",
+                    "Cyc wall access",
+                    "Technical assistance"
                   ]}
                 />
                 
                 <PricingCard
-                  title="8-Hour Block"
-                  price="$450"
-                  description="Perfect for recording multiple episodes."
+                  title="Full Season"
+                  price="$1500"
+                  description="The complete package for serious podcasters."
                   features={[
-                    "8 continuous hours of studio time",
-                    "Up to 4 people",
-                    "2 camera angles",
-                    "Technical assistance",
-                    "2 hours of editing included",
+                    "8 episodes (1.5 hours each)",
+                    "Two day recording sessions",
+                    "Professional audio engineer",
+                    "3 camera angles",
+                    "Raw video and audio files",
+                    "One fully edited longform episode",
                     "Cyc wall access",
-                    "Lunch provided"
+                    "Priority scheduling",
+                    "Promotional assets included"
                   ]}
                   popular={true}
                 />
                 
-                <PricingCard
-                  title="Monthly Subscription"
-                  price="$800"
-                  description="For regular podcasters with weekly shows."
-                  features={[
-                    "4 hours weekly (16 hours/month)",
-                    "Fixed schedule",
-                    "Up to 4 people",
-                    "2 camera angles",
-                    "Dedicated engineer",
-                    "4 hours of editing per month",
-                    "Cyc wall access",
-                    "Storage for your equipment"
-                  ]}
-                />
               </div>
             </TabsContent>
           </Tabs>
@@ -400,7 +393,7 @@ const Pricing = () => {
               <p className="text-sm text-studio-600 italic mb-6">
                 Custom packages available upon request. Contact us to discuss your specific needs.
               </p>
-              <Button to="/booking" variant="primary">Request Custom Quote</Button>
+              <Button to="/booking" variant="primary">Request Quote</Button>
             </div>
           </div>
         </div>
@@ -433,7 +426,7 @@ const Pricing = () => {
                 </div>
               </div>
               <Button to="/booking" variant="outline" className="border-white text-white hover:bg-white/20">
-                Get Custom Quote
+                Get Quote
               </Button>
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
