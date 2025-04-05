@@ -16,25 +16,25 @@ const Studio = () => {
     {
       title: "Microphones",
       description: "Shure SM7B, professional-grade microphone perfect for voice recording with excellent noise rejection.",
-      imageSrc: "/web_microphone2.png",
+      imageSrc: "/public/static/images/web_microphone2.png",
       icon: <Mic className="mb-2 h-6 w-6" />
     },
     {
       title: "Rodecaster Pro 2",
       description: "Professional audio mixer designed specifically for podcasting with built-in effects and multitrack recording.",
-      imageSrc: "/rhodecaster.png",
+      imageSrc: "/public/static/images/rhodecaster.png",
       icon: <Monitor className="mb-2 h-6 w-6" />
     },
     {
       title: "Sony FX30 Cameras",
       description: "Sony FX30 professional cinema cameras featuring Super 35mm sensors for stunning 4K video.",
-      imageSrc: "/web_compressed_sonylong.png",
+      imageSrc: "/public/static/images/web_compressed_sonylong.png",
       icon: <Camera className="mb-2 h-6 w-6" />
     },
     {
       title: "Sony A7SIII",
       description: "Full-frame mirrorless camera with exceptional low-light performance and advanced video capabilities.",
-      imageSrc: "/web_compressed_sonyalpha7s.png",
+      imageSrc: "/public/static/images/web_compressed_sonyalpha7s.png",
       icon: <Camera className="mb-2 h-6 w-6" />
     },
     {
@@ -46,7 +46,7 @@ const Studio = () => {
     {
       title: "Acoustic Treatment",
       description: "Premium sound panels and bass traps for professional-grade sound isolation.",
-      imageSrc: "/web_audio.png"
+      imageSrc: "/public/static/images/web_audio.png"
     }
   ];
 
@@ -54,21 +54,21 @@ const Studio = () => {
     {
       title: "Podcast Studio",
       description: "Intimate setting with professional equipment for up to 4 guests.",
-      imageSrc: "/peopleinstudio.png",
+      imageSrc: "/public/static/images/peopleinstudio.png",
       price: "From $75/hour",
       buttonText: "Book Now"
     },
     {
       title: "Cyc Wall Studio",
       description: "Perfect for e-commerce, corporate videos, ads, and photography.",
-      imageSrc: "/cycwall.png",
+      imageSrc: "/public/static/images/cycwall.png",
       price: "From $90/hour",
       buttonText: "Book Now"
     },
     {
       title: "RGB Lighting Setup",
       description: "Customizable lighting for creative projects and visual content.",
-      imageSrc: "/web_f7aacc24-737b-458d-be95-cf9fbbb00c07.png",
+      imageSrc: "/public/static/images/rgblight.png",
       price: "From $85/hour",
       buttonText: "Book Now"
     }
@@ -80,7 +80,7 @@ const Studio = () => {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/static/images/peopleinstudio1.png"
+            src="/public/static/images/peopleinstudio1.png"
             alt="Recording Studio"
             className="object-cover w-full h-full"
             loading="eager"
@@ -176,7 +176,7 @@ const Studio = () => {
             
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <img
-                src="/static/images/web_optimized_studio.png"
+                src="/public/static/images/web_optimized_studio.png"
                 alt="Studio Interior"
                 className="object-cover w-full h-full"
                 loading="lazy"
@@ -192,7 +192,7 @@ const Studio = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <img
-                src="/CYCWall.mov"
+                src="/public/static/images/CYCWall.mov"
                 alt="Cyc Wall Studio"
                 className="absolute inset-0 w-full h-[150%] object-cover object-[center_25%]"
                 loading="lazy"
@@ -230,7 +230,7 @@ const Studio = () => {
             
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <img
-                src="/static/images/rgblight.png"
+                src="/public/static/images/rgblight.png"
                 alt="RGB Lighting Setup"
                 className="absolute inset-0 w-full h-[150%] object-cover object-[center_35%]"
                 loading="lazy"
