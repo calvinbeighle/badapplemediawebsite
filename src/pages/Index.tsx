@@ -9,7 +9,7 @@ const Index = () => {
       <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0 w-full h-full">
           <img
-            src="/web_optimized_v2_studio.png"
+            src="/web_optimized_studio.png"
             alt="Studio Interior"
             className="object-cover w-full h-full"
             style={{ maxWidth: '100%', maxHeight: '100%' }}

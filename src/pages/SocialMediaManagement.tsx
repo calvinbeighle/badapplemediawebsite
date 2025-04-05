@@ -11,7 +11,7 @@ const SocialMediaManagement = () => {
       <section className="relative h-[40vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/web_optimized_v2_compressed_microphone.png"
+            src="/web_compressed_microphone.png"
             alt="Social Media Success"
             className="object-cover w-full h-full brightness-50"
             fetchPriority="high"
@@ -58,7 +58,7 @@ const SocialMediaManagement = () => {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/web_optimized_v2_studio.png" 
+                src="/reel.mov" 
                 alt="Social Media Studio"
                 className="absolute inset-0 w-full h-full object-cover"
                 loading="lazy"

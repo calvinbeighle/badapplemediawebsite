@@ -22,19 +22,19 @@ const Studio = () => {
     {
       title: "Rodecaster Pro 2",
       description: "Professional audio mixer designed specifically for podcasting with built-in effects and multitrack recording.",
-      imageSrc: "/web_compressed_rhodecaster2.png",
+      imageSrc: "/rhodecaster.png",
       icon: <Monitor className="mb-2 h-6 w-6" />
     },
     {
       title: "Sony FX30 Cameras",
       description: "Sony FX30 professional cinema cameras featuring Super 35mm sensors for stunning 4K video.",
-      imageSrc: "/web_compressed_sonyalpha7s.png",
+      imageSrc: "/web_compressed_sonylong.png",
       icon: <Camera className="mb-2 h-6 w-6" />
     },
     {
       title: "Sony A7SIII",
       description: "Full-frame mirrorless camera with exceptional low-light performance and advanced video capabilities.",
-      imageSrc: "/web_compressed_sonylong.png",
+      imageSrc: "/web_compressed_sonyalpha7s.png",
       icon: <Camera className="mb-2 h-6 w-6" />
     },
     {
@@ -54,14 +54,14 @@ const Studio = () => {
     {
       title: "Podcast Studio",
       description: "Intimate setting with professional equipment for up to 4 guests.",
-      imageSrc: "/web_studio2_cropped.png",
+      imageSrc: "/peopleinstudio.png",
       price: "From $75/hour",
       buttonText: "Book Now"
     },
     {
       title: "Cyc Wall Studio",
       description: "Perfect for e-commerce, corporate videos, ads, and photography.",
-      imageSrc: "/web_0f7668ed-d3fe-4545-9fc4-4ec53a6a6c05.png",
+      imageSrc: "/cycwall.png",
       price: "From $90/hour",
       buttonText: "Book Now"
     },
@@ -80,7 +80,7 @@ const Studio = () => {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/web_5be7c992-e59c-4300-b660-15ef39b6631e.png"
+            src="/peopleinstudio1.png"
             alt="Recording Studio"
             className="object-cover w-full h-full"
             loading="eager"
@@ -176,7 +176,7 @@ const Studio = () => {
             
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <img
-                src="/web_5be7c992-e59c-4300-b660-15ef39b6631e.png"
+                src="web_optimized_studio.png"
                 alt="Studio Interior"
                 className="object-cover w-full h-full"
                 loading="lazy"
@@ -192,7 +192,7 @@ const Studio = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
               <img
-                src="/web_0f7668ed-d3fe-4545-9fc4-4ec53a6a6c05.png"
+                src="/CYCWall.mov"
                 alt="Cyc Wall Studio"
                 className="absolute inset-0 w-full h-[150%] object-cover object-[center_25%]"
                 loading="lazy"
@@ -230,7 +230,7 @@ const Studio = () => {
             
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <img
-                src="/web_f7aacc24-737b-458d-be95-cf9fbbb00c07.png"
+                src="/rgblight.png"
                 alt="RGB Lighting Setup"
                 className="absolute inset-0 w-full h-[150%] object-cover object-[center_35%]"
                 loading="lazy"

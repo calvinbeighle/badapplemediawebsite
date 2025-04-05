@@ -10,7 +10,7 @@ const Booking = () => {
       <section className="relative h-[40vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/studio.png"
+            src="/rgblight.png"
             alt="Studio Interior"
             className="object-cover w-full h-full object-[center_40%]"
           />
